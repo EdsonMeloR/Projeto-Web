@@ -7,7 +7,9 @@
 ### Pendências: ###
 ### Classes - Getters, setters e métodos de cada classe. ###
 ### Tela de login personalizada e com informações da empresa. ###
-### Classes - Getters, setters e métodos de cada classe. ###
+### Objetivo principal: Finalizar página index.html e deixar páginas responsivas ###
+### Objetivos secundários: Página de serviços, planos, sobre e contato.###
+### Objetivo terciário: Trabalhar na parte administrativa da Prosperity Log.  ###
 
 ### ============================================================= ###
 
