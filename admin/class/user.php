@@ -6,13 +6,13 @@
     {
         # ATRIBUTOS DA CLASSE USUARIO
 
-        private $id
-        private $nome
-        private $email
-        private $cpf
-        private $login
-        private $senha
-        private $foto
+        private $id;
+        private $nome;
+        private $email;
+        private $cpf;
+        private $login;
+        private $senha;
+        private $foto;
 
         // SET / GET - ID
 
@@ -98,8 +98,11 @@
             return $this->foto;
         }
 
+
+        //  =====================================================================================================================
         # METODOS DA CLASSE USUARIO
 
+        // Método - Procurar por ID
         public function loadByid($_id)
         {
             $sql = new Sql();
@@ -110,16 +113,18 @@
             }
         }
 
+        // Método - Gerar lista de usuários
         public function getList()        
         {
             $sql = new Sql();
             return $sql->select("SELECT * FROM usuario ORDER BY nome");
         }
 
+        // Procurar usuário por uma letra ou nome.
         public function search($nome_user)
         {
             $sql = new Sql();
-            return $sql->select("SELECT * FROM usuario WHERE nome LIKE :nome",array(":nome""".$nome_user.))
+            return $sql->select("SELECT * FROM usuario WHERE nome LIKE :nome",array(":nome"=>"%".$nome_user."%"));
         }
 
     }
