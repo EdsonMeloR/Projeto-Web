@@ -1,5 +1,6 @@
 # Projeto de desenvolvimento WEB #
 ### Responsáveis pelo front-end - Kaue Emanuel e Lucas Henrique ###
+### Responsáveis pelo back-end - Carlos Eduardo, Edson Melo. ###
 
 ### ============================================================= ###
 ## Preparação do ambiente - 16/10/2109 ##
