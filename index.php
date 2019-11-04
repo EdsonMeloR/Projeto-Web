@@ -16,7 +16,8 @@
             <ul>
                 <li><a href="#primeira">Inicio</a></li>
                 <li><a href="#segunda">Serviços</a></li>
-                <li><a href="#terceira">Localização</a></li>
+                <li><a href="#setima">Planos</a></li>
+                <li><a href="#sexta">Localização</a></li>
                 <li><a href="#quarta">Sobre</a></li>
                 <li><a href="#quinta">Contato</a></li>
             </ul>
@@ -41,7 +42,7 @@
         <!--  Blocos -->
         <article class="quadrado fadeIn">
             <img src="img/01.png" alt=""width="350px" height="350px">
-            <p class="subtxt">Transporte de Carga e Distribuição</p>
+            <p class="subtxt">Operador Logístico</p>
         
         </article>
         
@@ -53,7 +54,7 @@
 
         <article class="quadrado fadeIn">
             <img src="img/03.png" alt=""width="350px" height="350px">
-            <p class="subtxt">Operador Logistico</p>
+            <p class="subtxt">Transporte de Carga e Distribuição</p>
         </article>
     </section>
 
