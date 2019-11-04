@@ -7,30 +7,36 @@ body, html
     scroll-behavior: smooth;
 }
 
+/* ============================================================================================================================================= */
+
                     /* Imagens de cada conteúdo */
 /* Início */
 .primeira{background-image: url(../img/truck.jpg);height: 100vh;}
 
-/* Serviços */
+/* Quem somos */
 .segunda{background-image: url(../img/truck2.jpg);height: 100vh;}
 
-/* Localização */
+/* Serviços */
 .terceira{background-image: url(../img/fundo.jpg);height: 70vh;}
-.terceira iframe
 
-/* Sobre */
+/* Planos */
 .quarta{background-image: url(../img/web.jpg);height: 70vh;}
 
-/* Contato */
+/* Localização */
 .quinta{background-image: url(../img/contact.jpg);height: 70vh;}
 
-/* Conteúdos */
+/* Contato */
+.sexta{background-image: url(../img/contact.jpg);height: 70vh;}
 
+/* Conteúdos */
 .conteudo1{background: rgb(110, 163, 132); height: 30vh; text-align: center;font-weight: 100;}
 .conteudo2{background: rgb(88, 106, 165); height: 100vh;} 
-.conteudo3{background: rgb(190, 190, 190); height: 74vh;}
+.conteudo3{background: rgb(190, 190, 190); height: 80vh;}
 .conteudo4{background: rgb(175, 98, 165); height: 94vh;}
 .conteudo5{background: rgb(149, 149, 149); height: 60vh;}
+.conteudo6{background: rgb(149, 149, 149); height: 60vh;}
+
+/* ============================================================================================================================================= */
 
 /* Criando efeito parallax */
 .parallax
@@ -41,6 +47,8 @@ body, html
     background-size: cover;
 }
 
+/* ============================================================================================================================================= */
+
 /* JavaScript */
 @media only screen and (max-device-width: 1024px)
 {
@@ -50,6 +58,7 @@ body, html
     }
 }
 
+/* ============================================================================================================================================= */
 
 /* Titulos */
 
@@ -59,6 +68,8 @@ body, html
 
 .eltitulo h1{text-align: center; font-size: 80px; color: white; height: 40%; font-family: Helvetica; padding: 17%; font-weight: bold;}
 
+
+/* ============================================================================================================================================= */
 /* Menu */
 #menu ul 
 {
@@ -87,11 +98,12 @@ body, html
  
 #menu ul li a:hover 
     {
-		background-color:rgb(218, 218, 218);
-		color: rgb(139, 139, 139);
-        border-bottom:3px solid rgb(110, 163, 132);
+		background-color:rgb(226, 226, 226);
+		color: rgb(144, 144, 144);
+        border-bottom:3px solid #ffb000;
     }
         
+/* ============================================================================================================================================= */
 /* Footer */
 .social-icons a {font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
 .social-icons a:last-child{margin-right: 0;}
@@ -120,28 +132,6 @@ body, html
 .bg-black {background: #130400;}
 .bg-white{background: #fff}
 
-/* Google Maps - Localização */
-
-.maps iframe
-{
- padding-left: 63%;
- width: 680px;
- height: 550px;
- padding-bottom: 50%;
-}
-
-/* Galeria - Portfólio */
-
-.quadrado
-{
-    float: left;
-    padding-right: 40px;
-    text-align: center;
-    align-items: center;
-    padding-left: 200px;
-  
-}
-
 .quadrado img:hover
 {
      border-radius: 30px;
@@ -158,6 +148,7 @@ body, html
     border-radius: 30px;  
 }
 
+
 /* Contato */
 
 .formulario
@@ -166,6 +157,8 @@ body, html
     padding-left: 20%;
     padding: 2%;
 }
+
+/* ============================================================================================================================================= */
 
 /* Centralizando o formulário no meio */
 form {
@@ -222,3 +215,5 @@ button {
     /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
     margin-left: 5em;
 }
+
+/* ============================================================================================================================================= */
