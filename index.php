@@ -50,7 +50,7 @@
     </section>
 
     <section class="conteudo2 eltexto">
-            <!-- <p>A Prosperity Log trabalha com diversos tipos de transportes</p> -->
+            <p>A Prosperity Log trabalha com diversos tipos de transportes</p>
             
     </section>
 
