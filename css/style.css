@@ -1,219 +1,311 @@
-@import url(../css/reset.css);
+/* <?php ?> */
 
+/* * IMPORTANDO O RESET PARA O CSS */
+@import url("../css/reset.css");
 
+/* * APLICANDO ESTILO UNICO PARA O CORPO DO SITE */
 body, html
 {
-    height: 100%;
-    scroll-behavior: smooth;
-}
-
-/* ============================================================================================================================================= */
-
-                    /* Imagens de cada conteúdo */
-/* Início */
-.primeira{background-image: url(../img/truck.jpg);height: 100vh;}
-
-/* Quem somos */
-.segunda{background-image: url(../img/truck2.jpg);height: 100vh;}
-
-/* Serviços */
-.terceira{background-image: url(../img/fundo.jpg);height: 70vh;}
-
-/* Planos */
-.quarta{background-image: url(../img/web.jpg);height: 70vh;}
-
-/* Localização */
-.quinta{background-image: url(../img/contact.jpg);height: 70vh;}
-
-/* Contato */
-.sexta{background-image: url(../img/contact.jpg);height: 70vh;}
-
-/* Conteúdos */
-.conteudo1{background: rgb(110, 163, 132); height: 30vh; text-align: center;font-weight: 100;}
-.conteudo2{background: rgb(88, 106, 165); height: 100vh;} 
-.conteudo3{background: rgb(190, 190, 190); height: 80vh;}
-.conteudo4{background: rgb(175, 98, 165); height: 94vh;}
-.conteudo5{background: rgb(149, 149, 149); height: 60vh;}
-.conteudo6{background: rgb(149, 149, 149); height: 60vh;}
-
-/* ============================================================================================================================================= */
-
-/* Criando efeito parallax */
-.parallax
-{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* ============================================================================================================================================= */
-
-/* JavaScript */
-@media only screen and (max-device-width: 1024px)
-{
-    .parallax
-    {
-        background-attachment: scroll;
-    }
-}
-
-/* ============================================================================================================================================= */
-
-/* Titulos */
-
-.eltexto p{text-align: center; font-size: 32px; color: white; height: 70%; font-family: Arial; padding: 7%; font-weight: bold;}
-
-/* TXT */
-
-.eltitulo h1{text-align: center; font-size: 80px; color: white; height: 40%; font-family: Helvetica; padding: 17%; font-weight: bold;}
-
-
-/* ============================================================================================================================================= */
-/* Menu */
-#menu ul 
-{
-    padding:30px;
-    margin:0px;
-    float: center;
     width: 100%;
+    scroll-behavior: smooth;    
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.corpo
+{
+    width: 100%;
+    float: left;
+    padding:0px 1px 0px 1px;    
+    text-align: center;
+}
+
+.topo
+{
+    background-color: #EDEDED;
+    height: 60px;     
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/* * LOGO */
+.logo-home
+{
+    position: fixed;    
+    background-color: transparent;    
+    width: 12vh;
+    height: 12vh;
+    display: block;
+    padding-left: 3px;
+    padding-top: 3px;
+}    
+
+/* ============================================================================================================================================= */
+/* * Menu */
+
+#menu
+{
+    height: 50px;    
     background-color:#EDEDED;
+    width: 100%;
+    padding-top: 1px; 
+    padding-bottom: 1px;
+}
+
+#menu ul 
+{    
+    padding-top: 2vh;
+    padding-left: 13vh;    
+    margin:0px;
+    float: right;       
     list-style:none;
-    font:100% arial;
-    position: fixed;
+    font:100% arial; 
+    position: fixed;   
 }
 
 #menu ul li { display: inline;}
  
 #menu ul li a 
-    {
-	    background-color:#EDEDED;
-		color: #333;
-		text-decoration: none;
-        border-bottom:3px solid #EDEDED;
-		padding: 2px 30px;
-        float:center;
-        font-weight: bold;
-	}
+{
+    background-color:#EDEDED;
+	color: #333;
+	text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+	padding: 2px 30px;
+    float:center;
+    font-weight: bold;
+}
  
 #menu ul li a:hover 
-    {
-		background-color:rgb(226, 226, 226);
-		color: rgb(144, 144, 144);
-        border-bottom:3px solid #ffb000;
-    }
-        
-/* ============================================================================================================================================= */
-/* Footer */
-.social-icons a {font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
-.social-icons a:last-child{margin-right: 0;}
-.social-icons a:hover{color: #fff;}
-.copyright {color: #fff; margin-top: 2%;font-weight: bold;}
-.adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial;}
-
-
-/*  Blocos de serviços */
-.subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
-
-/* Radius */
-.radius{border-radius: 7px;}
-
-/* Container */
-.container 
 {
-    width: 92%;
-    float: left;
-    padding: 3% 4%;
-    text-align: center;
+    background-color:rgb(226, 226, 226);
+	color: rgb(144, 144, 144);
+    border-bottom:3px solid #ffb000;
 }
 
-/* BG Gradient */
-.bg-gradient{background: linear-gradient(to right,rgb(124, 124, 124), #959595)}
-.bg-black {background: #130400;}
-.bg-white{background: #fff}
+    /* ============================================================================================================================================= */
 
-.quadrado img:hover
+    /* Imagens de cada conteúdo */
+
+    /* Início */
+    .primeira{background-image: url(../img/truck.jpg);height: 100vh;}
+
+    /* Quem somos */
+    .segunda{background-image: url(../img/truck2.jpg);height: 100vh;}
+
+    /* Serviços */
+    .terceira{background-image: url(../img/fundo.jpg);height: 70vh;}
+
+    /* Planos */
+    .quarta{background-image: url(../img/web.jpg);height: 70vh;}
+
+    /* Localização */
+    .quinta{background-image: url(../img/contact.jpg);height: 70vh;}
+
+    /* Contato */
+    .sexta{background-image: url(../img/contact.jpg);height: 70vh;}
+
+    /* Conteúdos */
+    .conteudo1{background: rgb(110, 163, 132); height: 30vh; text-align: center;font-weight: 100;}
+    .conteudo2{background: rgb(88, 106, 165); height: 100vh;} 
+    .conteudo3{background: rgb(190, 190, 190); height: 80vh;}
+    .conteudo4{background: rgb(175, 98, 165); height: 94vh;}
+    .conteudo5{background: rgb(149, 149, 149); height: 60vh;}
+    .conteudo6{background: rgb(149, 149, 149); height: 60vh;}
+
+    /* ============================================================================================================================================= */
+
+    /* Criando efeito parallax */
+    .parallax
+    {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* ============================================================================================================================================= */
+
+    /* JavaScript */    
+    @media only screen and (max-device-width: 1024px)
+    {
+        .parallax
+        {
+            background-attachment: scroll;
+        }
+    }
+
+    /* ============================================================================================================================================= */
+
+    /* Titulos */
+
+    .eltexto p{text-align: center; font-size: 32px; color: white; height: 70%; font-family: Arial; padding: 7%; font-weight: bold;}
+
+    /* TXT */
+
+    .eltitulo h1{text-align: center; font-size: 80px; color: white; height: 40%; font-family: Helvetica; padding: 17%; font-weight: bold;}   
+        
+    /* ============================================================================================================================================= */
+    /* Footer */
+    .social-icons a {font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
+    .social-icons a:last-child{margin-right: 0;}
+    .social-icons a:hover{color: #fff;}
+    .copyright {color: #fff; margin-top: 2%;font-weight: bold;}
+    .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial;}
+
+
+    /*  Blocos de serviços */
+    .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+
+    /* Radius */
+    .radius{border-radius: 7px;}
+
+    /* Container */
+    .container 
+    {
+        width: 92%;
+        float: left;
+        padding: 3% 4%;
+        text-align: center;
+    }
+
+    /* BG Gradient */
+    .bg-gradient{background: linear-gradient(to right,rgb(124, 124, 124), #959595)}
+    .bg-black {background: #130400;}
+    .bg-white{background: #fff}
+
+    .quadrado img:hover
+    {
+        border-radius: 30px;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);    
+    }
+
+    .quadrado img
+    {
+        border-radius: 30px;  
+    }
+
+
+    /* Contato */
+
+    .formulario
+    {
+        width: 60%;
+        padding-left: 20%;
+        padding: 2%;
+    }
+
+    /* ============================================================================================================================================= */
+
+    /* Centralizando o formulário no meio */
+    form 
+    {
+        margin: 0 auto;
+        width: 400px;   
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+
+    /*Espaçamento entre os formulários*/
+    form div + div 
+    {
+        margin-top: 0.8em;  
+    }
+
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    label 
+    {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+    }
+
+    input, textarea 
+    {
+        /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+        font: 1.3em arial;
+        /* Para dar o mesmo tamanho a todos os campo de texto */
+        width: 660px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        /* Para harmonizar o look & feel das bordas nos campos de texto*/
+        border: 3px solid #999;
+    }
+
+    textarea 
+    {
+        /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+        vertical-align: top;
+
+        /* Para dar espaço suficiente para digitar algum texto */
+        height: 5em;
+
+        /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+        resize: vertical;
+    }
+
+    .button {
+        /* Para posicionar os botões para a mesma posição dos campos de texto */
+        padding-left: 100px; /* mesmo tamanho que os elementos do tipo label */
+    }
+    button 
+    {
+        /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+        margin-left: 5em;
+    }
+
+
+/* ! USANDO MEDIA QUERY NO SITE */
+
+/* * DISPOSITIVOS DE 1920px DE LARGURA */
+
+@media screen and (min-width:1920px)
+{   
+    body, html
+    {
+        width: 100%;
+        scroll-behavior: smooth;
+    }    
+   
+}
+
+/* * DISPOSITIVOS DE 1280px DE LARGURA */
+
+@media screen and (min-width:1280px)
 {
-     border-radius: 30px;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
     
 }
 
-.quadrado img
+/* * DISPOSITIVOS DE 960px DE LARGURA */
+
+@media screen and (min-width:960px)
 {
-    border-radius: 30px;  
+    
 }
 
+/* * DISPOSITIVOS DE 768px DE LARGURA */
 
-/* Contato */
-
-.formulario
+@media screen and (min-width:768px)
 {
-    width: 60%;
-    padding-left: 20%;
-    padding: 2%;
+   
 }
 
-/* ============================================================================================================================================= */
+/* * DISPOSITIVOS DE 480px DE LARGURA */
 
-/* Centralizando o formulário no meio */
-form {
-    margin: 0 auto;
-    width: 400px;   
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-}
-
-/*Espaçamento entre os formulários*/
-form div + div 
+@media screen and (min-width:480px)
 {
-    margin-top: 0.8em;
+   
 }
 
-/*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
-label 
-{
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}
 
-input, textarea {
-    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-    font: 1.3em arial;
-
-    /* Para dar o mesmo tamanho a todos os campo de texto */
-    width: 660px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    /* Para harmonizar o look & feel das bordas nos campos de texto*/
-    border: 3px solid #999;
-}
-
-textarea {
-    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
-    vertical-align: top;
-
-    /* Para dar espaço suficiente para digitar algum texto */
-    height: 5em;
-
-    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
-    resize: vertical;
-}
-
-.button {
-    /* Para posicionar os botões para a mesma posição dos campos de texto */
-    padding-left: 100px; /* mesmo tamanho que os elementos do tipo label */
-}
-button {
-    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
-    margin-left: 5em;
-}
-
-/* ============================================================================================================================================= */
