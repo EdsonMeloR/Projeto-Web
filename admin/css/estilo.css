@@ -1,41 +1,35 @@
-#formulario-login form{
-    width: 220px;
-    margin: 200px auto;
-    border:2px solid #ccc;
-}
+/* ! Formulário de Login */
 
-#formulario-login fieldset{
-    border: 0;
-    padding: 0 15px 10px 15px;
-}
-#formulario-login legend
+body
 {
-    font: 18px Tahoma, Geneva, sans-serif;
-    color: #069;
-    font-weight: bold;
-    padding: 10px 0;
-}
-#formulario-login label{
-    display: block;
-    padding: 3px 0;
+    background-color: #2c3338;
 }
 
-#formulario-login span{display: block;
-    font: 16px;
-    color: #069;}
-
-#formulario-login input{padding: 3px;
-                        width: 180px;
-                        border: 1px solid #069;
-                        font: 16px Tahoma, Geneva, sans-serif;
-                        font-weight: bold;
+.txt-form
+{
+    text-align: left;
+    font-size: 1.3em;
 }
 
-#formulario-login .botao{
-    width:120px;
-    display:block;
-    margin:10px auto;
-    cursor:pointer;
-    background:#069;
-    color:white;
+.radius
+{
+    border-radius: 15px;
+}
+
+.btn-form
+{
+    width: 120px;
+    height: px;
+    background-color: #ffb000;
+}
+
+#box-login
+{
+    background-color: aqua;
+    margin: 25% 36% 5% 36%;
+}
+
+#formulario-login
+{
+    margin: 1px 1px 1px 1px;
 }

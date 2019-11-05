@@ -5,22 +5,21 @@
     <title>Área Administrativa</title>
     <!-- ! Links de CSS -->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/icone.png">
+
 
 </head>
+
 <body>
     <div id="box-login">
         <div id="formulario-login">
             <form id="frmlogin" name="frmlogin" action="" method="POST">
-                <fieldset>
-                    <legend>Faça seu login</legend>
-                    
-                    <label for=""><span>Login</span></label>
-                    <input type="text" name="login_user" id="login_user">
-
-                    <label for=""><span>Senha</span></label>
-                    <input type="password" name="senha_user" id="senha_user">
-
-                    <input type="submit" name="logar_user" id="logar" value="Logar" class="botao">
+                <fieldset>                    
+                    <input type="text" name="login_user"placeholder="Usuário" id="login_user">
+                    <br>                    
+                    <input type="password" name="senha_user" placeholder="Senha" id="senha_user">
+                    <br>
+                    <input class="btn-form radius"type="submit" name="logar_user" id="logar" value="Logar" class="botao">
                 </fieldset>
             </form>
     
