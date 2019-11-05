@@ -25,8 +25,9 @@ a
 
 .topo
 {
-    background-color: #EDEDED;
-    height: 60px;     
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    /* position: fixed;      */
 }
 
 img
@@ -47,12 +48,12 @@ img
 }    
 
 /* ============================================================================================================================================= */
-/* * Menu */
 
+/* * Menu */
 #menu
 {
     height: 50px;    
-    background-color:#EDEDED;
+    /* background-color:rgb(58, 58, 58); */
     width: 100%;
     padding-top: 1px; 
     padding-bottom: 1px;
@@ -73,10 +74,10 @@ img
  
 #menu ul li a 
 {
-    background-color:#EDEDED;
-	color: #333;
+    /* background-color:#EDEDED; */
+	color: white;
 	text-decoration: none;
-    border-bottom:3px solid #EDEDED;
+    /* border-bottom:3px solid #EDEDED; */
 	padding: 2px 30px;
     float:center;
     font-weight: bold;
@@ -84,7 +85,7 @@ img
  
 #menu ul li a:hover 
 {
-    background-color:rgb(226, 226, 226);
+    background-color:rgb(58, 58, 58);
 	color: rgb(144, 144, 144);
     border-bottom:3px solid #ffb000;
 }
@@ -93,31 +94,43 @@ img
 
     /* Imagens de cada conteúdo */
 
-    /* Início */
+    /* Primeiro - Início */
     .primeira{background-image: url(../img/truck.jpg);height: 100vh;}
 
-    /* Quem somos */
+    /* Segundo - Quem somos */
     .segunda{background-image: url(../img/truck2.jpg);height: 100vh;}
 
-    /* Serviços */
+    /* Terceiro - Serviços */
     .terceira{background-image: url(../img/fundo.jpg);height: 70vh;}
 
-    /* Planos */
+    /* Quarto - Planos */
     .quarta{background-image: url(../img/web.jpg);height: 70vh;}
 
-    /* Localização */
+    /* Quinto - Localização */
     .quinta{background-image: url(../img/contact.jpg);height: 70vh;}
 
-    /* Contato */
-    .sexta{background-image: url(../img/contact.jpg);height: 70vh;}
+    /* Sexto - Contato */
+    .sexta{background-image: url(../img/contact.jpg);height: 50vh;}
 
     /* Conteúdos */
-    .conteudo1{background: rgb(110, 163, 132); height: 30vh; text-align: center;font-weight: 100;}
-    .conteudo2{background: rgb(88, 106, 165); height: 100vh;} 
-    .conteudo3{background: rgb(190, 190, 190); height: 80vh;}
-    .conteudo4{background: rgb(175, 98, 165); height: 94vh;}
-    .conteudo5{background: rgb(149, 149, 149); height: 60vh;}
-    .conteudo6{background: rgb(149, 149, 149); height: 60vh;}
+
+    /* Primeiro - Inicio */
+    .conteudo1{background: rgb(43, 79, 144); height: 35vh; text-align: center;font-weight: 100;}
+
+    /* Segundo - Quem somos */
+    .conteudo2{background: rgb(83, 107, 184); height: 35vh;}
+
+     /* Terceiro - Serviços  */
+    .conteudo3{background: rgb(155, 69, 69); height: 50vh;}
+
+    /* Quarto - Planos */
+    .conteudo4{background: rgb(150, 95, 200); height: 70vh;}
+
+    /* Quinto -Localização */
+    .conteudo5{background: rgb(223, 223, 223); height: 40vh;}
+
+    /* Sexto - Contato */
+    .conteudo6{background: rgb(223, 223, 223) height: 60vh;}
 
     /* ============================================================================================================================================= */
 
@@ -152,7 +165,8 @@ img
     .eltitulo h1{text-align: center; font-size: 80px; color: white; height: 40%; font-family: Helvetica; padding: 17%; font-weight: bold;}   
         
     /* ============================================================================================================================================= */
-    /* Footer */
+
+    /* Rodapé */
     .social-icons a {font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
     .social-icons a:last-child{margin-right: 0;}
     .social-icons a:hover{color: #fff;}
@@ -160,7 +174,7 @@ img
     .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial;}
 
 
-    /*  Blocos de serviços */
+    /*  Blocos de serviços - Texto */
     .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
 
     /* Radius */
