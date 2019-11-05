@@ -85,8 +85,8 @@ img
  
 #menu ul li a:hover 
 {
-    background-color:rgb(58, 58, 58);
-	color: rgb(144, 144, 144);
+    /* background-color:rgb(58, 58, 58); */
+	color: rgb(255, 255, 255);
     border-bottom:3px solid #ffb000;
 }
 
