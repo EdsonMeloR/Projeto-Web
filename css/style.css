@@ -46,7 +46,25 @@ img
     display: block;
     padding-left: 3px;
     padding-top: 3px;
-}    
+}
+
+.btn-login
+{
+    position: fixed;    
+    width: 30px;
+    height: 30px;
+    left: 97%;
+    display: block;
+    bottom: 95.5%;
+} 
+
+.btn-login a
+{
+    color:white;
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+}
 
 /* ============================================================================================================================================= */
 
@@ -99,7 +117,7 @@ img
     .primeira{background-image: url(../img/truck.jpg);height: 100vh;}
 
     /* Segundo - Quem somos */
-    .segunda{background-image: url(../img/truck2.jpg);height: 100vh;}
+    .segunda{background-image: url(../img/truck2.jpg);height: 80vh;}
 
     /* Terceiro - Serviços */
     .terceira{background-image: url(../img/fundo.jpg);height: 80vh;}
@@ -111,7 +129,7 @@ img
     .quinta{background-image: url(../img/contact.jpg);height: 80vh;}
 
     /* Sexto - Contato */
-    .sexta{background-image: url(../img/contact.jpg);height: 100vh;}
+    .sexta{background-image: url(../img/contact.jpg);height: 80vh;}
 
     /* Conteúdos */
 
@@ -122,16 +140,16 @@ img
     .conteudo2{background: rgb(83, 107, 184); height: 35vh;}
 
      /* Terceiro - Serviços  */
-    .conteudo3{background: rgb(155, 69, 69); height: 85vh;}
+    .conteudo3{background: rgb(155, 69, 69); height: 85vh; }
 
     /* Quarto - Planos */
-    .conteudo4{background: rgb(150, 95, 200); height: 70vh;}
+    .conteudo4{background: rgb(150, 95, 200); height: 85vh;}
 
     /* Quinto -Localização */
-    .conteudo5{background: rgb(223, 223, 223); height: 40vh;}
+    .conteudo5{background: rgb(39, 39, 39); height: 50vh;}
 
     /* Sexto - Contato */
-    .conteudo6{background: rgb(223, 223, 223); height: 40vh;}
+    .conteudo6{background: rgb(39, 39, 39); height: 55vh;}
 
     /* ============================================================================================================================================= */
 
@@ -157,9 +175,9 @@ img
 
     /* ============================================================================================================================================= */
 
-    /* Titulos */
+    /* Sub-textos */
 
-    .eltexto p{text-align: center; font-size: 32px; color: white; height: 70%; font-family: Arial; padding: 7%; font-weight: bold;}
+    .eltexto p{text-align: center; font-size: 32px; color: white; height: 30%; font-family: Arial; padding: 7%; font-weight: bold;}
 
     /* TXT */
 
@@ -192,6 +210,33 @@ img
     /* ============================================================================================================================================= */
 
     /* Blocos - Serviços */
+
+    .servicos
+    {
+        padding: 2% 4%;
+    }
+
+    .servico
+    {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 3%;
+    }
+
+    .quadrados
+    {
+        float: left;
+        padding: 3% 4%;
+        width: 100%;
+    }
+
+    .quadrado
+    {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 3%;        
+    }
+
 
     .quadrado img
     {
