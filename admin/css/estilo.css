@@ -1,35 +1,163 @@
 /* ! Formulário de Login */
 
+/* *Classses pré definidas, para serem usadas */
+
+html
+{
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+}
+
 body
 {
     background-color: #2c3338;
+    color: #606468;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.5;
+    margin:0;
+    min-height: 100vh;
 }
 
-.txt-form
+.alinhamento
 {
-    text-align: left;
-    font-size: 1.3em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.radius
+.box
 {
-    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    width: 90%;
 }
 
-.btn-form
+.hidden
 {
-    width: 120px;
-    height: px;
-    background-color: #ffb000;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
-#box-login
+.icon
 {
-    background-color: aqua;
-    margin: 25% 36% 5% 36%;
+    display: inline-block;
+    fill: #606468;
+    font-size: 1rem;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
 }
 
-#formulario-login
+
+/* * Editando os elementos do fomulário*/
+
+a
 {
-    margin: 1px 1px 1px 1px;
+    color: #eee;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover
+{
+    text-decoration: underline;
+}
+
+input
+{
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+input[type='submit']
+{
+    cursor: pointer;
+}
+
+.frm
+{
+    margin: calc(0.875rem * -1);
+}
+
+.frm input[type='password'],
+.frm input[type='text'],
+.frm input[type='submit']
+{
+    width: 100%;
+}
+
+.field_forms
+{
+    display: flex;
+    margin: 0.875rem;
+}
+
+.field_form
+{
+    flex: 1;
+}
+
+.login
+{
+    color: #eee;
+}
+
+.login label,
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='submit'] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.login label {
+  background-color: #363b41;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.login input[type='password'],
+.login input[type='text'] {
+  background-color :#3b4148;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.login input[type='password']:focus,
+.login input[type='password']:hover,
+.login input[type='text']:focus,
+.login input[type='text']:hover {
+  background-color: #434a52;
+}
+
+.login input[type='submit'] {
+  background-color: #ea4c88;
+  color: #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.login input[type='submit']:focus,
+.login input[type='submit']:hover {
+  background-color: #d44179;
 }
