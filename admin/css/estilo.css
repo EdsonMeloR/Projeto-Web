@@ -63,7 +63,8 @@ body
 .copyright
 {
     position: fixed;
-    margin-top:23.5%;
+    /* margin-top:23.5%; */
+    top: 900px;
 }
 
 /* * Editando os elementos do fomulário*/

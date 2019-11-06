@@ -13,6 +13,7 @@ body, html
 a
 {
     text-decoration: none;
+    font-family: arial;
 }
 
 .corpo
@@ -101,16 +102,16 @@ img
     .segunda{background-image: url(../img/truck2.jpg);height: 100vh;}
 
     /* Terceiro - Serviços */
-    .terceira{background-image: url(../img/fundo.jpg);height: 70vh;}
+    .terceira{background-image: url(../img/fundo.jpg);height: 80vh;}
 
     /* Quarto - Planos */
-    .quarta{background-image: url(../img/web.jpg);height: 70vh;}
+    .quarta{background-image: url(../img/web.jpg);height: 80vh;}
 
     /* Quinto - Localização */
-    .quinta{background-image: url(../img/contact.jpg);height: 70vh;}
+    .quinta{background-image: url(../img/contact.jpg);height: 80vh;}
 
     /* Sexto - Contato */
-    .sexta{background-image: url(../img/contact.jpg);height: 50vh;}
+    .sexta{background-image: url(../img/contact.jpg);height: 100vh;}
 
     /* Conteúdos */
 
@@ -130,7 +131,7 @@ img
     .conteudo5{background: rgb(223, 223, 223); height: 40vh;}
 
     /* Sexto - Contato */
-    .conteudo6{background: rgb(223, 223, 223); height: 60vh;}
+    .conteudo6{background: rgb(223, 223, 223); height: 40vh;}
 
     /* ============================================================================================================================================= */
 
@@ -167,15 +168,8 @@ img
     /* ============================================================================================================================================= */
 
     /* Rodapé */
-    .social-icons a {font-size: 1.5em; color: rgba(255, 255, 255, 0.7); margin-right: 3%;}
-    .social-icons a:last-child{margin-right: 0;}
-    .social-icons a:hover{color: #fff;}
-    .copyright {color: #fff; margin-top: 2%;font-weight: bold;}
-    .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial;}
-
-
-    /*  Blocos de serviços - Texto */
-    .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+    .copyright {color: #fff; margin-top: 2%;font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 15px;}
+    .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial; font-size: 14px; opacity: 30%;}
 
     /* Radius */
     .radius{border-radius: 7px;}
@@ -190,9 +184,19 @@ img
     }
 
     /* BG Gradient */
-    .bg-gradient{background: linear-gradient(to right,rgb(124, 124, 124), #959595)}
+    .bg-gradient{background: linear-gradient(to right,rgb(0, 0, 0), #000)}
     .bg-black {background: #130400;}
     .bg-white{background: #fff}
+
+   
+    /* ============================================================================================================================================= */
+
+    /* Blocos - Serviços */
+
+    .quadrado img
+    {
+        border-radius: 30px;
+    }
 
     .quadrado img:hover
     {
@@ -204,10 +208,8 @@ img
         transform: scale(1.1);    
     }
 
-    .quadrado img
-    {
-        border-radius: 30px;  
-    }
+    /*  Blocos de serviços - Texto */
+    /* .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;} */
 
     /* ============================================================================================================================================= */
 
