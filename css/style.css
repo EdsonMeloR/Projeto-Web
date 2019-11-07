@@ -47,6 +47,32 @@ img
     /* position: fixed;      */
 }
 
+.conteudos
+{
+    width: 100%;    
+    padding: 3% 4%;
+    text-align: center; 
+    text-align: center; 
+    font-size: 30px; 
+    color: white; 
+    height: 30%; 
+    font-family: Arial;     
+    font-weight: bold;  
+}
+
+.conteudo_mapa
+{
+    width: 100%;    
+    padding: 1% 1%;
+    text-align: center; 
+    text-align: center; 
+    font-size: 32px; 
+    color: white; 
+    height: 30%; 
+    font-family: Arial;     
+    font-weight: bold; 
+}
+
 img
 {
     max-width: 100%;
@@ -132,7 +158,7 @@ img
 
     /* ============================================================================================================================================= */
 
-    /* Imagens de cada conteúdo */
+    /* * Imagens de cada conteúdo */
 
     /* Primeiro - Início */
     .primeira{background-image: url(../img/1920/principal.jpg);height: 100vh;}
@@ -150,38 +176,11 @@ img
     .quinta{background-image: url(../img/1920/localizacao.jpg);height: 80vh;}
 
     /* Sexto - Contato */
-    .sexta{background-image: url(../img/1920/contato.jpg);height: 80vh;}
-
-    /* Conteúdos */
-
-    /* Primeiro - Inicio */
-    .conteudo1{background: rgb(43, 79, 144); height: 35vh; text-align: center;font-weight: 100;}
-
-    /* Segundo - Quem somos */
-    .conteudo2{background: rgb(83, 107, 184); height: 35vh;}
-
-     /* Terceiro - Serviços  */
-    .conteudo3
-    {
-        background: rgb(155, 69, 69); 
-        height: 85vh; 
-        padding: 3% 4%;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Quarto - Planos */
-    .conteudo4{background: rgb(150, 95, 200); height: 85vh;}
-
-    /* Quinto -Localização */
-    .conteudo5{background: rgb(39, 39, 39); height: 50vh;}
-
-    /* Sexto - Contato */
-    .conteudo6{background: rgb(39, 39, 39); height: 55vh;}
+    .sexta{background-image: url(../img/1920/contato.jpg);height: 80vh;}   
 
     /* ============================================================================================================================================= */
 
-    /* Criando efeito parallax */
+    /* * Criando efeito parallax */
     .parallax
     {
         background-attachment: fixed;
@@ -192,7 +191,7 @@ img
 
     /* ============================================================================================================================================= */
 
-    /* JavaScript */    
+    /* * JavaScript */    
     @media only screen and (max-device-width: 1024px)
     {
         .parallax
@@ -203,57 +202,27 @@ img
 
     /* ============================================================================================================================================= */
 
-    /* Sub-textos */
-
-    .eltexto p{text-align: center; font-size: 32px; color: white; height: 30%; font-family: Arial; padding: 7%; font-weight: bold;}
-
-    /* TXT */
+    /* *TXT */
 
     .eltitulo h1{text-align: center; font-size: 80px; color: white; height: 40%; font-family: Helvetica; padding: 17%; font-weight: bold;}   
         
     /* ============================================================================================================================================= */
 
-    /* Rodapé */
-    .copyright {color: #fff; margin-top: 2%;font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 15px;}
-    .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial; font-size: 14px; opacity: 30%;}
+    /* * Rodapé */
 
-    /* Radius */
-    .radius{border-radius: 7px;}
-
-    /* Container */
-    .container 
+    .rodape
     {
         width: 100%;
-        float: left;
-        padding: 3% 4%;
         text-align: center;
+        background-color: black;
+        height: 13vh;
     }
 
-    .inner
-{
-    padding: 7%;
-}
+    .copyright {color: #fff; padding-top: 2%; font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 15px;}
+    .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial; font-size: 14px; opacity: 30%;}
 
-.inner a
-{
-    font-size: 1.5em;
-    color: white;
-    font-weight: 700;
-}
-
-.inner h4 
-{
-    font-size: 1.5em;
-    color:white;
-    font-weight: 700; 
-}
-
-.inner p
-{
-    margin-top: 6%;
-    color: white;
-    line-height: 1.5em;
-}
+    /* * Radius */
+    .radius{border-radius: 7px;}
 
     /* BG Gradient */
     .bg-gradient{background: linear-gradient(to right,rgb(0, 0, 0), #000)}
@@ -263,39 +232,7 @@ img
    
     /* ============================================================================================================================================= */
 
-    /* Blocos - Serviços */
-
-    .servico
-    {
-       width: 100%;
-       text-align: left;
-       margin-bottom: 3%;
-    }
-
-.servico img
-{
-    border-radius: 7px 7px 0 0;
-}
-
-    .quadrados
-    {
-        float: left;
-        padding: 3% 4%;
-        width: 100%;
-    }
-
-    .quadrado
-    {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 3%;        
-    }
-
-
-    .quadrado img
-    {
-        border-radius: 30px;
-    }
+    /* * Blocos - Serviços */
 
     .quadrado img:hover
     {
@@ -313,7 +250,7 @@ img
     /* ============================================================================================================================================= */
 
 
-    /* Contato */
+    /* * Contato */
 
     .formulario
     {
@@ -322,22 +259,8 @@ img
         padding: 2%;
     }
 
-    /* Centralizando o formulário no meio */
-     form 
-    {
-        margin: 0 auto;
-        width: 400px;   
-        padding: 1em;
-        border: 1px solid #CCC;
-        border-radius: 1em;
-    }
-
-    /*Espaçamento entre os formulários*/
-    form div + div 
-    {
-        margin-top: 0.8em;  
-    }
-
+    /* * Centralizando o formulário no meio */
+   
     /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
     label 
     {
@@ -372,7 +295,8 @@ img
         resize: vertical;
     }
 
-    .button {
+    .button 
+    {
         /* Para posicionar os botões para a mesma posição dos campos de texto */
         padding-left: 100px; /* mesmo tamanho que os elementos do tipo label */
     }
