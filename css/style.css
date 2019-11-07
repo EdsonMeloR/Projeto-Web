@@ -1,7 +1,18 @@
 /* <?php ?> */
 
 /* * IMPORTANDO O RESET PARA O CSS */
-@import url("../css/reset.css");
+/* @import url("../css/reset.css"); */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
 
 /* * APLICANDO ESTILO UNICO PARA O CORPO DO SITE */
 body, html
@@ -16,11 +27,16 @@ a
     font-family: arial;
 }
 
+img
+{
+    max-width: 100%;
+}
+
 .corpo
 {
-    width: 100%;
+    width: 100%;        
     float: left;
-    padding:0px 1px 0px 1px;    
+    padding: 3% 4%;
     text-align: center;
 }
 
@@ -43,9 +59,14 @@ img
     background-color: transparent;    
     width: 12vh;
     height: 12vh;
-    display: block;
-    padding-left: 3px;
-    padding-top: 3px;
+    display: block;    
+}
+
+.logo-home a
+{
+    width: 85%;
+    height: 85%;
+    position: absolute;
 }
 
 .btn-login
@@ -114,22 +135,22 @@ img
     /* Imagens de cada conteúdo */
 
     /* Primeiro - Início */
-    .primeira{background-image: url(../img/truck.jpg);height: 100vh;}
+    .primeira{background-image: url(../img/1920/principal.jpg);height: 100vh;}
 
     /* Segundo - Quem somos */
-    .segunda{background-image: url(../img/truck2.jpg);height: 80vh;}
+    .segunda{background-image: url(../img/1920/servicos.jpg);height: 80vh;}
 
     /* Terceiro - Serviços */
-    .terceira{background-image: url(../img/fundo.jpg);height: 80vh;}
+    .terceira{background-image: url(../img/1920/equipe.jpg);height: 80vh;}
 
     /* Quarto - Planos */
-    .quarta{background-image: url(../img/web.jpg);height: 80vh;}
+    .quarta{background-image: url(../img/1920/planos.jpg);height: 80vh;}
 
     /* Quinto - Localização */
-    .quinta{background-image: url(../img/contact.jpg);height: 80vh;}
+    .quinta{background-image: url(../img/1920/localizacao.jpg);height: 80vh;}
 
     /* Sexto - Contato */
-    .sexta{background-image: url(../img/contact.jpg);height: 80vh;}
+    .sexta{background-image: url(../img/1920/contato.jpg);height: 80vh;}
 
     /* Conteúdos */
 
@@ -140,7 +161,14 @@ img
     .conteudo2{background: rgb(83, 107, 184); height: 35vh;}
 
      /* Terceiro - Serviços  */
-    .conteudo3{background: rgb(155, 69, 69); height: 85vh; }
+    .conteudo3
+    {
+        background: rgb(155, 69, 69); 
+        height: 85vh; 
+        padding: 3% 4%;
+        width: 100%;
+        text-align: center;
+    }
 
     /* Quarto - Planos */
     .conteudo4{background: rgb(150, 95, 200); height: 85vh;}
@@ -195,11 +223,37 @@ img
     /* Container */
     .container 
     {
-        width: 92%;
+        width: 100%;
         float: left;
         padding: 3% 4%;
         text-align: center;
     }
+
+    .inner
+{
+    padding: 7%;
+}
+
+.inner a
+{
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+}
+
+.inner h4 
+{
+    font-size: 1.5em;
+    color:white;
+    font-weight: 700; 
+}
+
+.inner p
+{
+    margin-top: 6%;
+    color: white;
+    line-height: 1.5em;
+}
 
     /* BG Gradient */
     .bg-gradient{background: linear-gradient(to right,rgb(0, 0, 0), #000)}
@@ -211,17 +265,17 @@ img
 
     /* Blocos - Serviços */
 
-    .servicos
-    {
-        padding: 2% 4%;
-    }
-
     .servico
     {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 3%;
+       width: 100%;
+       text-align: left;
+       margin-bottom: 3%;
     }
+
+.servico img
+{
+    border-radius: 7px 7px 0 0;
+}
 
     .quadrados
     {
