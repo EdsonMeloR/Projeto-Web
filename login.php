@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Área do Usuário</title>
     <!-- ! Links de CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../img/icone.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -17,6 +17,12 @@
 
         <form action="op_user.php" class="frm login">
             <!-- USUÁRIO -->
+
+            <h1 style="font-family:Arial; 
+            font-size: 2em; 
+            text-align:center; 
+            font-weight:bold; 
+            padding-bottom:0.7em;">Área do Usuário</h1>
 
             <div class="field_forms">
                 <label for="user_name">
@@ -36,13 +42,15 @@
                 <input class="filed_form" type="password" name="senha_user" placeholder="Senha">
             </div>
 
-            <!-- BOTÃO -->
+            <!-- BOTÃO LOGIN -->
 
             <div class="field_forms">
                 <input type="submit" value="Fazer Login">
-                
             </div>
+
+            <!-- BOTÃO CADASTRAR -->
         </form>    
+        
     </div>  
     
     <p class="copyright">
