@@ -37,11 +37,10 @@
             <div class="btn-login">
                 <a href="login.php" class="fa fa-user"></a>
             </div>
-        </header>
-
-    <main>
+    </header>    
 
     <!-- ==================================================================================================== -->
+    <main>
 
         <!--Conteúdo 1 - Inicio-->
         <section class="primeira parallax eltitulo" id="primeira">
@@ -61,8 +60,8 @@
     </section>
 
     <section class="conteudos" style="background-color: rgb(83, 107, 184);">
-            <p>Fundada em 2011 por profissionais com larga experiência na modalidade de transporte rodoviário, para atuar no seguimento de transporte de cargas, 
-                a Prosperity Log Transportes LTDA é uma empresa moderna e apta para atender plenamente as necessidades de sua empresa.</p>
+        <p>Fundada em 2011 por profissionais com larga experiência na modalidade de transporte rodoviário, para atuar no seguimento de transporte de cargas, 
+        a Prosperity Log Transportes LTDA é uma empresa moderna e apta para atender plenamente as necessidades de sua empresa.</p>
             
     </section>
 
@@ -76,6 +75,24 @@
     <section class="conteudos" style="background: rgb(155, 69, 69);">
         <p>A Prosperity Log trabalha com diversos tipos de transportes</p>
         <!--  BLOCOS -->
+        <article class="servicos ">
+
+            <div class="servico">
+                <h3>Transporte de Carga e Distribuição</h3>
+                <img src="img/1920/model1.png" alt="">
+            </div> 
+                    
+            <div class="servico">
+                    <h3>Entregas Urgentes</h3>
+                <img src="img/1920/model2.png" alt="">
+            </div> 
+            
+            <div class="servico">
+                    <h3>Operador Logistico</h3>
+                <img src="img/1920/model3.png" alt="">
+            </div> 
+
+        </article>
         
     </section> 
 
@@ -119,34 +136,33 @@
         <section class="conteudos" style="background: rgb(39, 39, 39);">
             <p>Entre em contato conosco!</p> 
             <div class="form-principal">
-                <form>
-                    <fieldset>
-                        <legend><span class="form-txt">Mande a sua dúvida!</span></legend>
+                <form action="" class="form-contato" method="POST" tabindex="1">
+                    <input type="text" class="input-contato" name="" placeholder="Nome" required>
 
-                            <input type="text" name="field1" placeholder="Seu nome *">
-                            <input type="email" name="field2" placeholder="Seu e-mail *">
+                    <input type="text" class="input-contato" name="" placeholder="Email" required>
 
-                            <textarea name="field3" placeholder="Mensagem:"></textarea>  
-                    </fieldset>
-                    <input type="submit" value="Enviar"/>
-                </form>
+                    <input type="text" class="input-contato" name="" placeholder="Telefone" required>
+
+                    <textarea class="txt_area" name="" placeholder="Deixe sua menssagem" required></textarea>
+
+                    <input type="submit" class="btn_form" value="Enviar">
+                </form>                                
             </div>            
          </section>
 
+    </main>
     <!-- ==================================================================================================== -->
 
-        <!-- Footer - Rodapé -->
-        <footer class="rodape">            
-            <p class="copyright">
-                Copyright © ShellCode 2019. Todos os direitos reservados.
-            </p>
-            <br>            
-            <a href="admin/login.php" class="adm">Área Administrativa</a>
-            <br>
-            <br>
-        </footer>
+    <!-- Footer - Rodapé -->
+    <footer class="rodape">            
+        <p class="copyright">
+            Copyright © ShellCode 2019. Todos os direitos reservados.
+        </p>                       
+        <a href="admin/login.php" class="adm">Área Administrativa</a>
+           
+    </footer>
          
-    </main>
+
 
     <!-- ! JAVA SCRIPT -->
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>

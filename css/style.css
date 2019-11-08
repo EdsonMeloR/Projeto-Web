@@ -156,29 +156,29 @@ img
     border-bottom:3px solid #ffb000;
 }
 
-    /* ============================================================================================================================================= */
+/* ============================================================================================================================================= */
 
-    /* * Imagens de cada conteúdo */
+/* * Imagens de cada conteúdo */
 
-    /* Primeiro - Início */
-    .primeira{background-image: url(../img/1920/principal.jpg);height: 100vh;}
+/* Primeiro - Início */
+.primeira{background-image: url(../img/1920/principal.jpg);height: 100vh;}
 
-    /* Segundo - Quem somos */
-    .segunda{background-image: url(../img/1920/servicos.jpg);height: 80vh;}
+/* Segundo - Quem somos */
+.segunda{background-image: url(../img/1920/servicos.jpg);height: 80vh;}
 
-    /* Terceiro - Serviços */
-    .terceira{background-image: url(../img/1920/equipe.jpg);height: 80vh;}
+/* Terceiro - Serviços */
+.terceira{background-image: url(../img/1920/equipe.jpg);height: 80vh;}
 
-    /* Quarto - Planos */
-    .quarta{background-image: url(../img/1920/planos.jpg);height: 80vh;}
+/* Quarto - Planos */
+.quarta{background-image: url(../img/1920/planos.jpg);height: 80vh;}
 
-    /* Quinto - Localização */
-    .quinta{background-image: url(../img/1920/localizacao.jpg);height: 80vh;}
+/* Quinto - Localização */
+.quinta{background-image: url(../img/1920/localizacao.jpg);height: 80vh;}
 
-    /* Sexto - Contato */
-    .sexta{background-image: url(../img/1920/contato.jpg);height: 80vh;}   
+/* Sexto - Contato */
+.sexta{background-image: url(../img/1920/contato.jpg);height: 80vh;}   
 
-    /* ============================================================================================================================================= */
+/* ============================================================================================================================================= */
 
     /* * Criando efeito parallax */
     .parallax
@@ -189,7 +189,7 @@ img
         background-size: cover;
     }
 
-    /* ============================================================================================================================================= */
+/* ============================================================================================================================================= */
 
     /* * JavaScript */    
     @media only screen and (max-device-width: 1024px)
@@ -200,111 +200,136 @@ img
         }
     }
 
-    /* ============================================================================================================================================= */
+/* ============================================================================================================================================= */
 
-    /* *TXT */
+/* *TXT */
 
-    .eltitulo h1{text-align: center; font-size: 80px; color: white; height: 40%; font-family: Helvetica; padding: 17%; font-weight: bold;}   
+.eltitulo h1
+{
+    text-align: center; 
+    font-size: 80px; 
+    color: white; 
+    height: 40%; 
+    font-family: 
+    Helvetica; 
+    padding: 17%; 
+    font-weight: bold;
+}   
         
-    /* ============================================================================================================================================= */
+/* ============================================================================================================================================= */
 
-    /* * Rodapé */
+/* * Rodapé */
 
-    .rodape
-    {
-        width: 100%;
-        text-align: center;
-        background-color: black;
-        height: 13vh;
-    }
+.rodape
+{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 13vh;
+}
 
-    .copyright {color: #fff; padding-top: 2%; font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 15px;}
-    .adm {color: #fff; margin-top: 2%;font-weight: bold; opacity: 60%; font-family: arial; font-size: 14px; opacity: 30%;}
+.copyright 
+{
+    color: #fff; 
+    padding-top: 2%; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.adm 
+{
+    color: #fff; 
+    margin-top: 2%;
+    font-weight: bold; 
+    opacity: 60%; 
+    font-family: arial; 
+    font-size: 14px;     
+}
 
-    /* * Radius */
-    .radius{border-radius: 7px;}
+/* * Radius */
+.radius{border-radius: 7px;}
 
-    /* BG Gradient */
-    .bg-gradient{background: linear-gradient(to right,rgb(0, 0, 0), #000)}
-    .bg-black {background: #130400;}
-    .bg-white{background: #fff}
+/* ============================================================================================================================================= */
 
+/* * Blocos - Serviços */
+
+.servicos
+{    
+    margin: 0 auto;
+    display: flex;    
+    border-radius: 7px;
+}
+
+.servico 
+{
+    padding-top: 2px;
+    margin: 4px;
+    text-align: center;
+    width: 100%;      
+}
+
+.servico img:hover
+{
+    border-radius: 3px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+/*  Blocos de serviços - Texto */
+/* .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;} */
+
+/* ============================================================================================================================================= */
+    
+
+/* * Centralizando o formulário no meio */
    
-    /* ============================================================================================================================================= */
+/*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+label 
+{
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
 
-    /* * Blocos - Serviços */
+input, textarea 
+{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1.3em arial;
 
-    .quadrado img:hover
-    {
-        border-radius: 30px;
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);    
-    }
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+     width: 800px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
-    /*  Blocos de serviços - Texto */
-    /* .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;} */
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 3px solid #999;
+}
 
-    /* ============================================================================================================================================= */
+textarea 
+{
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
 
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
 
-    /* * Contato */
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
 
-    .formulario
-    {
-        width: 60%;
-        padding-left: 20%;
-        padding: 2%;
-    }
-
-    /* * Centralizando o formulário no meio */
-   
-    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
-    label 
-    {
-        display: inline-block;
-        width: 90px;
-        text-align: center;
-    }
-
-    input, textarea 
-    {
-        /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-        font: 1.3em arial;
-
-        /* Para dar o mesmo tamanho a todos os campo de texto */
-        width: 800px;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-
-        /* Para harmonizar o look & feel das bordas nos campos de texto*/
-        border: 3px solid #999;
-    }
-
-    textarea 
-    {
-        /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
-        vertical-align: top;
-
-        /* Para dar espaço suficiente para digitar algum texto */
-        height: 5em;
-
-        /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
-        resize: vertical;
-    }
-
-    .button 
-    {
-        /* Para posicionar os botões para a mesma posição dos campos de texto */
-        padding-left: 100px; /* mesmo tamanho que os elementos do tipo label */
-    }
-    button 
-    {
-        /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
-        margin-left: 5em;
-    }
+.button 
+{
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 100px; /* mesmo tamanho que os elementos do tipo label */
+}
+button 
+{
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: 5em;
+}
 
 /* ============================================================================================================================================= */
 
@@ -347,9 +372,87 @@ img
 
 /* ============================================================================================================================================= */
 
+/* ! Formulário para contato */
+
+.form-principal
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-contato
+{
+    width: 100%;
+    font-family: "Arial", Times, serif;
+}
+
+.input-contato
+{
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+.txt_area
+{
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+}
+
+.btn_form
+{
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #ffb000;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 1s;
+    float: left;
+}
+
+.btn_form:hover
+{
+    opacity: 1;
+}
+/* ============================================================================================================================================= */
+
 /* ! Formulário de Login */
 
 /* *Classses pré definidas, para serem usadas */
+
 html
 {
     box-sizing: border-box;
@@ -415,7 +518,7 @@ body
     top: 900px;
 }
 
-/* * Editando os elementos do fomulário*/
+/* ! Editando os elementos do fomulário*/
 
 a
 {
