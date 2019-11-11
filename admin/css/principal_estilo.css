@@ -1,6 +1,15 @@
 /* ! IMPORTANDO O RESSET DO CSS */
-@import url(/css/reset.css);
-
+/* @import url(/css/reset.css); */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
 
 @keyframes swing {
     0% {
