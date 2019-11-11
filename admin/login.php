@@ -15,7 +15,7 @@
 
     <div class="box">
 
-        <form action="op_adm.php" class="frm login">
+        <form action="op_user.php" class="frm login" method="POST">
             <!-- USUÁRIO -->
 
             <div class="field_forms">
@@ -39,14 +39,13 @@
             <!-- BOTÃO -->
 
             <div class="field_forms">
-                <input type="submit" value="Fazer Login">
-                
+                <input type="submit" value="Fazer Login" name="btn_login_adm">                
             </div>
         </form>    
     </div>  
     
     <p class="copyright">
-                Copyright © ShellCode 2019. Todos os direitos reservados.
+        Copyright © ShellCode 2019. Todos os direitos reservados.
     </p>
 </body>
 </html>

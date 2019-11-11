@@ -16,13 +16,11 @@
 <body>
 
     <div class="page-wrapper chiller-theme toggled">
-        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
-            <i class="fa fa-bars"></i>
-        </a>
+
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
                 <div class="sidebar-brand">
-                    <a href="#">Área Administrativa</a>
+                    <a>Área Administrativa</a>
                 </div>
                 <div class="sidebar-header">
                     <div class="user-pic">
@@ -39,7 +37,8 @@
                         </span>
                     </div>
                 </div>
-                <!-- sidebar-header  -->
+                <!-- * sidebar-header  -->
+
                 <div class="sidebar-search">
                     <div>
                         <div class="input-group">
@@ -52,139 +51,154 @@
                         </div>
                     </div>
                 </div>
-                <!-- sidebar-search  -->
+
+                <!-- * sidebar-search  -->
                 <div class="sidebar-menu">
                     <ul>
                         <li class="header-menu">
-                            <span>Geral</span>
+                            <span>Gerenciar Usuários</span>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
+                            <a>
                                 <i class="fa fa-user"></i>
                                 <span>Usuários</span>
-                                <span class="fa fa-arrow-down"></span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Dashboard 1
-                                            <span class="badge badge-pill badge-success"></span>
+                                        <a href="principal.php?link=2">Adicionar
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">Dashboard 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dashboard 3</a>
+                                        <a href="principal.php?link=3">Listar</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+                        <li class="header-menu">
+                            <span>Gerenciar Site</span>
+                        </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>Caminhoreiros</span>                                
+                            <a>
+                                <i class="fa fa-image"></i>
+                                <span>Banners</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Products</a>
+                                        <a href="principal.php?link=">Adicionar</a>
                                     </li>
                                     <li>
-                                        <a href="#">Orders</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Credit cart</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>                        
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                <i class="fa fa-look"></i>
-                                <span>Charts</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li>
-                                        <a href="#">Pie chart</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Line chart</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bar chart</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Histogram</a>
-                                    </li>
+                                        <a href="principal.php?link=">Listar</a>
+                                    </li>                                   
                                 </ul>
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#">
-                                <i class="fa fa-globe"></i>
-                                <span>Maps</span>
+                            <a>
+                                <i class="fa fa-truck"></i>
+                                <span>Serviços</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Google maps</a>
+                                        <a href="principal.php?link=">Adicionar</a>
                                     </li>
                                     <li>
-                                        <a href="#">Open street map</a>
+                                        <a href="principal.php?link=">Listar</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <!-- sidebar-menu  -->
+                <!-- * sidebar-menu  -->
             </div>
             <!-- sidebar-content  -->
-            <div class="sidebar-footer">
-                <a href="#">
-                    <i class="fa fa-bell"></i>
-
+            <div class="sidebar-footer">                
+                <a href="../index.php">
+                    <i class="fa fa-home"></i>
                 </a>
-                <a href="#">
-                    <i class="fa fa-envelope"></i>
-
-                </a>
-                <a href="#">
-                    <i class="fa fa-cog"></i>
-                </a>
-                <a href="#">
+                <a href="op_adm.php?sair=true">
                     <i class="fa fa-power-off"></i>
                 </a>
             </div>
         </nav>
-        <!-- sidebar-wrapper  -->
+
+        <!-- * sidebar-wrapper  -->
         <main class="page-content">
-            <div class="container-fluid">
+            <div class="conteudo_frm">
+            
+                <?php
+
+                // ! CHAMANDOS OS FORMULÁRIOS
+                if(isset($_GET['link']))
+                {
+                    $link = $_GET['link'];
+                    $pag[1] = "home_principal.php";
+
+                    // * LINKS PARA USUARIO
+                    $pag[2] = "adicionar_users.php";
+                    $pag[3] = "lista_user.php";
+
+                    // * LINKS PARA BANNER
+                    $pag[4] = "adicionar_banner.php";
+                    $pag[5] = "lista_banner.php";
+
+                    // * LINKS PARA SERVIÇOS
+                    $pag[6] = "adicionar_servico.php";
+                    $pag[7] = "lista_servico.php";
+
+                    if(!empty($link))
+                    {
+                        if(file_exists($pag[$link]))
+                        {
+                            include $pag[$link];
+                        }
+
+                        else
+                        {
+                            include $pag[1];
+                        }                        
+                    }
+
+                    else
+                    {
+                        include "home_principal.php";
+                    }
+
+                }
+
+                ?>                
             </div>
-
         </main>
-        <!-- page-content" -->
+        <!-- * page-content" -->
     </div>
-    <!-- page-wrapper -->
+    <!-- * page-wrapper -->
 
 
-    <!-- ! JAVA SCRIPT -->
+    <!-- ! JAVA SCRIPT - JQUERY -->
 
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js">
-        $(".sidebar-dropdown > a").click(function () {
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script>
+        $(".sidebar-dropdown > a").click(function () 
+        {
             $(".sidebar-submenu").slideUp(200);
-            if (
+            if 
+            (
                 $(this)
                     .parent()
                     .hasClass("active")
-            ) {
+            ) 
+            {
                 $(".sidebar-dropdown").removeClass("active");
                 $(this)
                     .parent()
                     .removeClass("active");
-            } else {
+            } 
+            else 
+            {
                 $(".sidebar-dropdown").removeClass("active");
                 $(this)
                     .next(".sidebar-submenu")
@@ -195,14 +209,15 @@
             }
         });
 
-        $("#close-sidebar").click(function () {
+        $("#close-sidebar").click(function () 
+        {
             $(".page-wrapper").removeClass("toggled");
         });
-        $("#show-sidebar").click(function () {
+        $("#show-sidebar").click(function () 
+        {
             $(".page-wrapper").addClass("toggled");
         });
     </script>
-
 
 </body>
 

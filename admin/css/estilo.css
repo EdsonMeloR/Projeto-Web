@@ -113,29 +113,31 @@ input[type='submit']
 
 .field_forms
 {
-    display: flex;
-    margin: 0.875rem;
+  display: flex;
+  margin: 0.875rem;
 }
 
 .field_form
 {
-    flex: 1;
+  flex: 1;
 }
 
 .login
 {
-    color: #eee;
+  color: #eee;
 }
 
 .login label,
 .login input[type='text'],
 .login input[type='password'],
-.login input[type='submit'] {
+.login input[type='submit'] 
+{
   border-radius: 0.25rem;
   padding: 1rem;
 }
 
-.login label {
+.login label 
+{
   background-color: #363b41;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -144,7 +146,8 @@ input[type='submit']
 }
 
 .login input[type='password'],
-.login input[type='text'] {
+.login input[type='text'] 
+{
   background-color :#3b4148;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -153,11 +156,13 @@ input[type='submit']
 .login input[type='password']:focus,
 .login input[type='password']:hover,
 .login input[type='text']:focus,
-.login input[type='text']:hover {
+.login input[type='text']:hover
+ {
   background-color: #434a52;
 }
 
-.login input[type='submit'] {
+.login input[type='submit'] 
+{
   background-color: #ffb000;
   color: #eee;
   font-weight: 700;
@@ -165,529 +170,7 @@ input[type='submit']
 }
 
 .login input[type='submit']:focus,
-.login input[type='submit']:hover {
+.login input[type='submit']:hover 
+{
   background-color: #ffae00de;
 }
-
-
-
-
-
-
-
-
-@keyframes swing 
-{
-  0% {transform: rotate(0deg); }
-  10% {transform: rotate(10deg); }
-  30% {transform: rotate(0deg); }
-  40% {transform: rotate(-10deg); }
-  50% {transform: rotate(0deg); }
-  60% {transform: rotate(5deg); }
-  70% {transform: rotate(0deg); }
-  80% {transform: rotate(-5deg); }
-  100% {transform: rotate(0deg); }
-}
-  
-@keyframes sonar 
-{
-  0% 
-  {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-  100% 
-  {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-body 
-{
-  font-size: 0.9rem;
-}
-
-.pagina .lateral,
-.lateral .lateral-marca > a,
-.lateral .dropdown > a:after,
-.lateral .lateral-menu .dropdown .sub-menu li a:before,
-.lateral ul li a i,
-.pagina .conteudo-centro,
-.lateral .lateral-buscar input.menu-procurar,
-.lateral .lateral-buscar .input-group-text,
-.lateral .lateral-menu ul li a,
-#monstrar-menu,
-#close-sidebar 
-{
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-  
-/*----------------page-wrapper----------------*/
-  
-.pagina 
-{
-  height: 100vh;
-}
-  
-.pagina .theme 
-{
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  border-radius: 4px;
-  margin: 2px;
-}
-  
-.pagina .theme.tema 
-{
-  background: #1e2229;
-}
-  
-/*----------------toggeled sidebar----------------*/
-  
-.pagina.toggled .lateral 
-{
-  left: 0px;
-}
-  
-@media screen and (min-width: 768px) 
-{
-  .pagina.toggled .conteudo-centro
-  {
-    padding-left: 300px;
-  }
-}
-/*----------------show sidebar button----------------*/
-#mostrar-menu 
-{
-  position: fixed;
-  left: 0;
-  top: 10px;
-  border-radius: 0 4px 4px 0px;
-  width: 35px;
-  transition-delay: 0.3s;
-}
-.pagina.toggled #mostrar-menu
-{
-  left: -40px;
-}
-/*----------------sidebar-wrapper----------------*/
-  
-.lateral 
-{
-  width: 260px;
-  height: 100%;
-  max-height: 100%;
-  position: fixed;
-  top: 0;
-  left: -300px;
-  z-index: 999;
-}
-  
-.lateral ul 
-{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-  
-.lateral a 
-{
-  text-decoration: none;
-}
-  
-/*----------------sidebar-content----------------*/
-  
-.conteudo-lateral 
-{
-  max-height: calc(100% - 30px);
-  height: calc(100% - 30px);
-  overflow-y: auto;
-  position: relative;
-}
-  
-.conteudo-lateral.desktop 
-{
-  overflow-y: hidden;
-}
-  
-/*--------------------sidebar-brand----------------------*/
-  
-.lateral .lateral-marca 
-{
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-  
-.lateral .lateral-marca > a 
-{
-  text-transform: uppercase;
-  font-weight: bold;
-  flex-grow: 1;
-}
-  
-.lateral .lateral-marca #close-sidebar 
-{
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/*--------------------sidebar-header----------------------*/
-  
-.lateral .lateral-cabecalho 
-{
-  padding: 20px;
-  overflow: hidden;
-}
-  
-.lateral .lateral-cabecalho .foto-adm 
-{
-  float: left;
-  width: 60px;
-  padding: 2px;
-  border-radius: 12px;
-  margin-right: 15px;
-  overflow: hidden;
-}
-  
-.lateral .lateral-cabecalho  .foto-adm img 
-{
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-  
-.lateral .lateral-cabecalho  .user-info 
-{
-  float: left;
-}
-  
-.lateral .lateral-cabecalho  .user-info > span 
-{
-  display: block;
-}
-  
-.lateral .lateral-cabecalho  .user-info .user-role 
-{
-  font-size: 12px;
-}
-  
-.lateral .lateral-cabecalho  .user-info .user-status 
-{
-  font-size: 11px;
-  margin-top: 4px;
-}
-  
-.lateral .lateral-cabecalho  .user-info .user-status i 
-{
-  font-size: 8px;
-  margin-right: 4px;
-  color: #5cb85c;
-}
-  
-/*-----------------------sidebar-search------------------------*/
-  
-  .lateral .lateral-buscar > div 
-  {
-    padding: 10px 20px;
-  }
-  
-  /*----------------------sidebar-menu-------------------------*/
-  
-  .lateral .lateral-menu 
-  {
-    padding-bottom: 10px;
-  }
-  
-  .lateral .lateral-menu .cabecalho-menu span 
-  {
-    font-weight: bold;
-    font-size: 14px;
-    padding: 15px 20px 5px 20px;
-    display: inline-block;
-  }
-  
-  .lateral .lateral-menu ul li a 
-  {
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    position: relative;
-    padding: 8px 30px 8px 20px;
-  }
-  
-  .lateral .lateral-menu ul li a i 
-  {
-    margin-right: 10px;
-    font-size: 12px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 4px;
-  }
-  
-  .lateral .lateral-menu ul li a:hover > i::before 
-  {
-    display: inline-block;
-    animation: swing ease-in-out 0.5s 1 alternate;
-  }
-  
-  .lateral .lateral-menu .dropdown > a:after 
-  {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f105";
-    font-style: normal;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    background: 0 0;
-    position: absolute;
-    right: 15px;
-    top: 14px;
-  }
-  
-  .lateral .lateral-menu .dropdown .sub-menu ul 
-  {
-    padding: 5px 0;
-  }
-  
-  .lateral .lateral-menu .dropdown .sub-menu li 
-  {
-    padding-left: 25px;
-    font-size: 13px;
-  }
-  
-  .lateral .lateral-menu .dropdown .sub-menu li a:before 
-  {
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    font-style: normal;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 10px;
-    font-size: 8px;
-  }
-  
-  .lateral .lateral-menu ul li a span.label,
-  .lateral .lateral-menu ul li a span.badge 
-  {
-    float: right;
-    margin-top: 8px;
-    margin-left: 5px;
-  }
-  
-  .lateral .lateral-menu .dropdown .sub-menu li a .badge,
-  .lateral.lateral-menu .dropdown .sub-menu li a .label 
-  {
-    float: right;
-    margin-top: 0px;
-  }
-  
-  .lateral .lateral-menu .sub-menu 
-  {
-    display: none;
-  }
-  
-  .lateral .lateral-menu .dropdown.active > a:after 
-  {
-    transform: rotate(90deg);
-    right: 17px;
-  }
-  
-  /*--------------------------side-footer------------------------------*/
-  
-  .rodape-lateral {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-  }
-  
-  .rodape-lateral > a {
-    flex-grow: 1;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    position: relative;
-  }
-  
-  .rodape-lateral > a .notification
-   {
-    position: absolute;
-    top: 0;
-  }
-  
-  .badge-sonar {
-    display: inline-block;
-    background: #980303;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .badge-sonar:after 
-  {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid #980303;
-    opacity: 0;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    animation: sonar 1.5s infinite;
-  }
-  
-  /*--------------------------page-content-----------------------------*/
-  
-  .pagina .conteudo-centro 
-  {
-    display: inline-block;
-    width: 100%;
-    padding-left: 0px;
-    padding-top: 20px;
-  }
-  
-  .pagina .conteudo-centro > div {
-    padding: 20px 40px;
-  }
-  
-  .pagina .conteudo-centro {
-    overflow-x: hidden;
-  }
-  
-  /*------scroll bar---------------------*/
-  
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 7px;
-  }
-  ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #525965;
-    border: 0px none #ffffff;
-    border-radius: 0px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #525965;
-  }
-  ::-webkit-scrollbar-thumb:active {
-    background: #525965;
-  }
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    border: 0px none #ffffff;
-    border-radius: 50px;
-  }
-  ::-webkit-scrollbar-track:hover {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-track:active {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-  
-  
-  /*-----------------------------chiller-theme-------------------------------------------------*/
-  
-  .tema .latearl 
-  {
-      background: #31353D;
-  }
-  
-  .tema .latearl .lateral-cabecalho,
-  .tema .latearl .lateral-buscar,
-  .tema .latearl .lateral-menu 
-  {
-      border-top: 1px solid #3a3f48;
-  }
-  
-  .tema .latearl .lateral-buscar .input.menu-procurar,
-  .tema .latearl .lateral-buscar .input-group-text {
-      border-color: transparent;
-      box-shadow: none;
-  }
-  
-  .tema .latearl .lateral-cabecalho .user-info .user-role,
-  .tema .latearl .lateral-cabecalho .user-info .user-status,
-  .tema .latearl .lateral-buscar input.menu-procurar,
-  .tema .latearl .lateral-buscar .input-group-text,
-  .tema .latearl .lateral-marca>a,
-  .tema .latearl .lateral-menu ul li a,
-  .tema .rodape-lateral>a {
-      color: #818896;
-  }
-  
-  .tema .latearl .lateral-menu ul li:hover>a,
-  .tema .latearl .lateral-menu .dropdown.active>a,
-  .tema .latearl .lateral-cabecalho .user-info,
-  .tema .latearl .lateral-marca>a:hover,
-  .tema .rodape-lateral>a:hover i {
-      color: #b8bfce;
-  }
-  
-  .pagina.tema.toggled #close-sidebar {
-      color: #bdbdbd;
-  }
-  
-  .pagina.tema.toggled #close-sidebar:hover {
-      color: #ffffff;
-  }
-  
-  .tema .latearl ul li:hover a i,
-  .tema .latearl .dropdown .sub-menu li a:hover:before,
-  .tema .latearl .lateral-buscar input .menu-procurar:focus+span,
-  .tema .latearl .lateral-menu .dropdown.active a i {
-      color: #16c7ff;
-      text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
-  }
-  
-  .tema .latearl.lateral-menu ul li a i,
-  .tema .latearl .lateral-menu .dropdown div,
-  .tema .latearl .lateral-buscar input.menu-procurar,
-  .tema .latearl .lateral-buscar .input-group-text {
-      background: #3a3f48;
-  }
-  
-  .tema .latearl .lateral-menu .cabecalho-menu span {
-      color: #6c7b88;
-  }
-  
-  .tema .rodape-lateral {
-      background: #3a3f48;
-      box-shadow: 0px -1px 5px #282c33;
-      border-top: 1px solid #464a52;
-  }
-  
-  .tema .rodape-lateral>a:first-child {
-      border-left: none;
-  }
-  
-  .tema .rodape-lateral>a:last-child {
-      border-right: none;
-  }
-  

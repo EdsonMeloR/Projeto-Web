@@ -74,21 +74,25 @@
     </section>
     <section class="conteudos" style="background: rgb(155, 69, 69);">
         <p>A Prosperity Log trabalha com diversos tipos de transportes</p>
+        <br>
         <!--  BLOCOS -->
         <article class="servicos ">
 
             <div class="servico">
                 <h3>Transporte de Carga e Distribuição</h3>
+                <br>
                 <img src="img/1920/model1.png" alt="">
             </div> 
                     
             <div class="servico">
-                    <h3>Entregas Urgentes</h3>
+                <h3>Entregas Urgentes</h3>
+                <br>
                 <img src="img/1920/model2.png" alt="">
             </div> 
             
             <div class="servico">
-                    <h3>Operador Logistico</h3>
+                <h3>Operador Logistico</h3>
+                <br>
                 <img src="img/1920/model3.png" alt="">
             </div> 
 
@@ -154,12 +158,19 @@
     <!-- ==================================================================================================== -->
 
     <!-- Footer - Rodapé -->
-    <footer class="rodape">            
-        <p class="copyright">
+    <footer class="rodape">
+        <br>
+        <div class="area_adm">
+            <a href="admin/login.php" class="adm">
+                <span>
+                    Área Administrativa
+                </span>
+            </a>
+        </div>    
+        <br>                       
+        <span class="cop">
             Copyright © ShellCode 2019. Todos os direitos reservados.
-        </p>                       
-        <a href="admin/login.php" class="adm">Área Administrativa</a>
-           
+        </span>
     </footer>
          
 
