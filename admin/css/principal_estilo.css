@@ -44,6 +44,7 @@
 a 
 {
     text-decoration: none;
+    cursor: pointer;
 }
 
 body 
@@ -304,6 +305,7 @@ body
     text-align: center;
     background: 0 0;
     position: absolute;
+    cursor: pointer;
     right: 15px;
     top: 14px;
 }
@@ -322,6 +324,7 @@ body
     font-family: Arial;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -370,36 +373,6 @@ body
     line-height: 30px;
     position: relative;
 }
-
-.sidebar-footer>a .notification {
-    position: absolute;
-    top: 0;
-}
-
-.badge-sonar {
-    display: inline-block;
-    background: #980303;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-    position: absolute;
-    top: 0;
-}
-
-.badge-sonar:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid #980303;
-    opacity: 0;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    animation: sonar 1.5s infinite;
-}
-
-
 /*--------------------------page-content-----------------------------*/
 
 .page-wrapper .page-content {
@@ -540,18 +513,87 @@ body
     border-right: none;
 }
 
+
 /* ! ESTILO DOS FORMULARIOS DE GERENCIAENTO */
 
-.conteudo_frm
+.frm_titulo
 {
     font-size: 2em;
-    color: #464a52;
-    background: #16c7ff;
-    height: 100%;
+    padding-bottom: 2px;
+    font-family: arial;
+    color: #1e2229;
+    font-weight: bold;
 }
 
-.add_user
+.form-principal
 {
-    background-color: #5cb85c;
-    font-size: 5em;
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+
+.form-contato
+{
+    width: 100%;
+    font-family: "Arial", Times, serif;
+}
+
+.input-contato
+{
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+.input-info
+{
+    width: 49%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;    
+    margin-bottom: 15px;     
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+
+.btn_form
+{
+    width: 55%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #ffb000;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 1s;
+    float: left;
+}
+
+.btn_form:hover
+{
+    opacity: 1;
 }

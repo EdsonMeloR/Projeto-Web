@@ -23,7 +23,7 @@ body, html
 
 br
 {
-    
+    padding-top: 2px;    
 }
 
 a
@@ -49,6 +49,7 @@ img
 {
     background-color: rgb(0, 0, 0);
     height: 60px;
+    position: fixed;
 }
 
 .conteudos
@@ -89,7 +90,7 @@ img
     background-color: transparent;    
     width: 12vh;
     height: 12vh;
-    display: block;    
+    display: block;
 }
 
 .logo-home a
@@ -97,6 +98,8 @@ img
     width: 85%;
     height: 85%;
     position: absolute;
+    cursor: pointer; 
+    margin: 2.5px 0 2px 2.5px; 
 }
 
 .btn-login
