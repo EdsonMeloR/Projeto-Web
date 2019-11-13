@@ -17,26 +17,26 @@
     <!-- * MENU -->
     <header class="topo">
 
-            <!-- TODO: LOGO DA PROSPERITY LOG -->
-            <div class="logo-home">
-                <a href="#primeira" style="width: 12vh ;height: 12vh;">
-                    <img src="img/logo_menu.png" alt="Logo Prosperity Log">
-                </a>
-            </div>
+        <!-- TODO: LOGO DA PROSPERITY LOG -->
+        <div class="logo-home">
+            <a href="#primeira" style="width: 12vh ;height: 12vh;">
+                <img src="img/logo_menu.png" alt="Logo Prosperity Log">
+            </a>
+        </div>
     
-            <nav id="menu">
-                <ul>
-                    <li><a href="#segunda">Quem somos</a></li>
-                    <li><a href="#terceira">Serviços</a></li>
-                    <li><a href="#quarta">Planos</a></li>
-                    <li><a href="#quinta">Localização</a></li>
-                    <li><a href="#sexta">Contato</a></li>
-                </ul>
-            </nav>
+        <nav id="menu">
+            <ul>
+                <li><a href="#segunda">Quem somos</a></li>
+                <li><a href="#terceira">Serviços</a></li>
+                <li><a href="#quarta">Planos</a></li>
+                <li><a href="#quinta">Localização</a></li>
+                <li><a href="#sexta">Contato</a></li>
+            </ul>
+        </nav>
 
-            <div class="btn-login">
-                <a href="login.php" class="fa fa-user"></a>
-            </div>
+        <div class="btn-login">
+            <a href="login.php" class="fa fa-user"></a>
+        </div>
     </header>    
 
     <!-- ==================================================================================================== -->
@@ -45,10 +45,11 @@
         <!--Conteúdo 1 - Inicio-->
         <section class="primeira parallax eltitulo" id="primeira">
             <h1>P R O S P E R I T Y   L O G</h1>
+            <p>Excelência e confiabilidade em transportes</p>
         </section>
 
         <section class="conteudos" style="background: rgb(43, 79, 144);">
-            <p>Excelência e confiabilidade em transportes</p>
+            <p>A Prosperity Logo excelência e confiabilidade em transportes</p>
         </section>
 
     <!-- ==================================================================================================== -->
@@ -60,9 +61,24 @@
     </section>
 
     <section class="conteudos" style="background-color: rgb(83, 107, 184);">
-        <p>Fundada em 2011 por profissionais com larga experiência na modalidade de transporte rodoviário, para atuar no seguimento de transporte de cargas, 
-        a Prosperity Log Transportes LTDA é uma empresa moderna e apta para atender plenamente as necessidades de sua empresa.</p>
-            
+        <p class="txt_pri">
+        Fundada em 2011 por profissionais com larga experiência na modalidade de transporte rodoviário, para atuar no seguimento de transporte de cargas, a PROSPERITYLOG TRANSPORTES LTDA é uma empresa 
+        moderna e apta para atender plenamente as necessidades de sua empresa,
+        </p>
+
+        <p class="txt_sec">
+        Diferenciais
+        Flexibilidade em alocação de recursos, conforme necessidades e expectativas dos clientes
+        Gerenciamento dedicado das operações
+        Processos administrativos padronizados
+        Controle sistêmicos adequados e customizados para interfaces.
+        </p>
+
+        <input type="submit" value="Ver Mais" class="ver_mais">
+
+        <input type="submit" value="Ver Menos" class="ver_menos">
+
+        
     </section>
 
     <!-- ==================================================================================================== -->
@@ -108,8 +124,7 @@
     </section>
 
     <section class="conteudos" style="background: rgb(150, 95, 200);">
-            <p>A startup ShellCode está localizada em Itaquera</p> 
-            
+        <p>A startup ShellCode está localizada em Itaquera</p>             
             
     </section>
 
@@ -121,7 +136,7 @@
             <br>
         </section>
         <section class="conteudo_mapa" style="background: rgb(39, 39, 39);">
-            <p>A startup ShellCode está localizada em Itaquera</p> 
+            <p>A Prosperity Log encontra-se na Vila Carmosina</p> 
             <div style="overflow:hidden;width: 100%;position: relative;">
                 <iframe width="100%" height="550px" src="https://maps.google.com/maps?width=1920&amp;height=550&amp;hl=en&amp;q=Rua%3A%20Francisco%20Velho%20175+(T%C3%ADtulo)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>                
                 <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
@@ -178,7 +193,31 @@
     <!-- ! JAVA SCRIPT -->
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
-        
+
+        // ! VER MAIS: QUEM SOMOS
+
+        $(document).ready(function()
+        {
+            $('.txt_sec').toggle(),
+            $('.ver_menos').toggle();
+
+            $('.ver_mais').click(function()
+            {
+                $('.ver_mais').remove(),
+                $('.txt_sec').toggle(),
+                $('.ver_menos').toggle();                
+            });
+
+            // $('.ver_menos').click(function()
+            // {
+            //     $('.ver_mais').toggle(),
+            //     $('.ver_menos').remove(),
+            //     $('.txt_sec').remove();                                
+            // });
+            
+            
+        });
+                
     </script>
 </body>
 </html>
