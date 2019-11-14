@@ -44,13 +44,11 @@
 
         <!--Conteúdo 1 - Inicio-->
         <section class="primeira parallax eltitulo" id="primeira">
-            <h1>P R O S P E R I T Y   L O G</h1>
-            <p>Excelência e confiabilidade em transportes</p>
-        </section>
-
-        <section class="conteudos" style="background: rgb(43, 79, 144);">
-            <p>A Prosperity Logo excelência e confiabilidade em transportes</p>
-        </section>
+            <h1>
+                P R O S P E R I T Y   L O G
+                <p>Excelência e confiabilidade em transportes</p>
+            </h1>            
+        </section>        
 
     <!-- ==================================================================================================== -->
 
@@ -62,8 +60,8 @@
 
     <section class="conteudos" style="background-color: rgb(83, 107, 184);">
         <p class="txt_pri">
-        Fundada em 2011 por profissionais com larga experiência na modalidade de transporte rodoviário, para atuar no seguimento de transporte de cargas, a PROSPERITYLOG TRANSPORTES LTDA é uma empresa 
-        moderna e apta para atender plenamente as necessidades de sua empresa,
+        Fundada em 2011 por profissionais com larga experiência na modalidade de transporte rodoviário, para atuar no seguimento de transporte de cargas, a 
+        PROSPERITYLOG TRANSPORTES LTDA é uma empresa moderna e apta para atender plenamente as necessidades de nossos clientes e suas empresas.
         </p>
 
         <p class="txt_sec">
@@ -72,6 +70,18 @@
         Gerenciamento dedicado das operações
         Processos administrativos padronizados
         Controle sistêmicos adequados e customizados para interfaces.
+
+        MISSÃO
+        Contribuir para o sucesso dos nossos clientes e colaboradores, gerando valor e soluções em transporte, distribuição e sustentabilidade do negócio.
+
+        VISÃO
+        Ser a melhor empresa de transporte rodoviário de cargas do Brasil, aproximando clientes dos fornecedores e contribuindo positivamente para um país melhor.
+
+        VALORES
+        Satisfação do cliente
+        Valorização e respeito às pessoas
+        Responsabilidade social
+        Respeito ao Meio Ambiente
         </p>
 
         <input type="submit" value="Ver Mais" class="ver_mais">
@@ -92,7 +102,7 @@
         <p>A Prosperity Log trabalha com diversos tipos de transportes</p>
         <br>
         <!--  BLOCOS -->
-        <article class="servicos ">
+        <article class="servicos radius">
 
             <div class="servico">
                 <h3>Transporte de Carga e Distribuição</h3>
@@ -124,8 +134,11 @@
     </section>
 
     <section class="conteudos" style="background: rgb(150, 95, 200);">
-        <p>A startup ShellCode está localizada em Itaquera</p>             
+        <p>A Prosperity Log oferece diversos planos para nossos clientes, melhorando
             
+        </p>
+
+        
     </section>
 
     <!-- ==================================================================================================== -->
@@ -197,24 +210,23 @@
         // ! VER MAIS: QUEM SOMOS
 
         $(document).ready(function()
-        {
-            $('.txt_sec').toggle(),
-            $('.ver_menos').toggle();
+        {  
+            $('.ver_menos').hide(),
+            $('.txt_sec').hide();
 
             $('.ver_mais').click(function()
             {
-                $('.ver_mais').remove(),
-                $('.txt_sec').toggle(),
-                $('.ver_menos').toggle();                
+                $('.ver_mais').hide(),
+                $('.txt_sec').slideDown("slow"),
+                $('.ver_menos').show();                
             });
 
-            // $('.ver_menos').click(function()
-            // {
-            //     $('.ver_mais').toggle(),
-            //     $('.ver_menos').remove(),
-            //     $('.txt_sec').remove();                                
-            // });
-            
+            $('.ver_menos').click(function()
+            {
+                $('.ver_menos').hide(),
+                $('.txt_sec').slideUp("slow"),
+                $('.ver_mais').show();                
+            });                       
             
         });
                 

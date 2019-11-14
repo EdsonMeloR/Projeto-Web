@@ -56,8 +56,7 @@ img
 {
     width: 100%;    
     padding: 3% 4%;
-    text-align: center; 
-    text-align: center; 
+    text-align: center;      
     font-size: 30px; 
     color: white; 
     height: 30%; 
@@ -173,7 +172,8 @@ img
     height: 55px;
     background-color: #ffb000;
     color: #fff;
-    font-size: 0.5em;    
+    font-size: 0.5em;   
+    border-radius: 7px; 
 }
 
 .ver_menos
@@ -183,6 +183,7 @@ img
     background-color: #ffb000;
     color: #fff;
     font-size: 0.5em;    
+    border-radius: 7px;
 }
 
 
@@ -239,11 +240,20 @@ img
     font-size: 80px; 
     color: white; 
     height: 40%; 
-    font-family: 
-    Helvetica; 
+    font-family: Helvetica; 
     padding: 17%; 
     font-weight: bold;
 }   
+
+.eltitulo p
+{
+    text-align: center; 
+    font-size: 30px; 
+    color: white; 
+    height: 20%; 
+    font-family: Helvetica;      
+    font-weight: bold;
+}
         
 /* ============================================================================================================================================= */
 
@@ -281,7 +291,7 @@ img
 
 
 /* * Radius */
-.radius{border-radius: 7px;}
+.radius{border-radius: 27px;}
 
 /* ============================================================================================================================================= */
 
@@ -291,7 +301,7 @@ img
 {    
     margin: 0 auto;
     display: flex;    
-    border-radius: 7px;
+    border-radius: 9px;    
 }
 
 .servico 
@@ -299,21 +309,28 @@ img
     padding-top: 2px;
     margin: 4px;
     text-align: center;
-    width: 100%;      
+    width: 100%;          
+}
+
+.servico h3
+{
+    font-size: 25px;
+}
+
+.servico img
+{
+    border-radius: 9px;
 }
 
 .servico img:hover
 {
-    border-radius: 3px;
+    border-radius: 9px;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);    
 }
-
-/*  Blocos de serviços - Texto */
-/* .subtxt{padding-top: 35px; font-size: 24px; color:white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;} */
 
 /* ============================================================================================================================================= */
     
