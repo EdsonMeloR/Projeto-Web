@@ -65,19 +65,20 @@
         </p>
 
         <p class="txt_sec">
-        Diferenciais
+
+        Diferenciais       
         Flexibilidade em alocação de recursos, conforme necessidades e expectativas dos clientes
         Gerenciamento dedicado das operações
         Processos administrativos padronizados
         Controle sistêmicos adequados e customizados para interfaces.
-
-        MISSÃO
+        
+        MISSÃO       
         Contribuir para o sucesso dos nossos clientes e colaboradores, gerando valor e soluções em transporte, distribuição e sustentabilidade do negócio.
 
-        VISÃO
+        VISÃO        
         Ser a melhor empresa de transporte rodoviário de cargas do Brasil, aproximando clientes dos fornecedores e contribuindo positivamente para um país melhor.
 
-        VALORES
+        VALORES        
         Satisfação do cliente
         Valorização e respeito às pessoas
         Responsabilidade social
@@ -134,11 +135,15 @@
     </section>
 
     <section class="conteudos" style="background: rgb(150, 95, 200);">
-        <p>A Prosperity Log oferece diversos planos para nossos clientes, melhorando
-            
-        </p>
+        <p>A Prosperity Log oferece diversos planos para nossos clientes, visando
+           melhorar a experiência para eles;
+           Confira abaixo nossos planos
+        </p>        
+        <div class="btn_ver_planos">
+            <a href="planos.php"></a>
+        </div> 
 
-        
+        <input type="submit" value="Ver Planos" class="ver_planos" onclick="ver_planos()">
     </section>
 
     <!-- ==================================================================================================== -->
@@ -207,6 +212,8 @@
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
 
+        // ! EFEITO E EXIBIÇAÕ DO PARALAX
+
         // ! VER MAIS: QUEM SOMOS
 
         $(document).ready(function()
@@ -229,6 +236,14 @@
             });                       
             
         });
+
+        // ! VER MAIS: PLANOS
+
+        function ver_planos()
+        {
+            window.location.href = "planos.php"
+        }
+
                 
     </script>
 </body>

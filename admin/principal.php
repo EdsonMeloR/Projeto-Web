@@ -23,9 +23,11 @@
                     <a href="principal.php">Área Administrativa</a>
                 </div>
                 <div class="sidebar-header">
+
                     <div class="user-pic">
                         <img class="img-responsive img-rounded" src="img/idead.jfif" alt="User picture">
                     </div>
+
                     <div class="user-info">
                         <span class="user-name">
                             Lucas Henrique
@@ -35,14 +37,18 @@
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
                         </span>
+
                     </div>
+
                 </div>
                 <!-- * sidebar-header  -->
 
                 <div class="sidebar-search">
                     <div>
                         <div class="input-group">
+
                             <input type="text" class="form-control search-menu" placeholder="Search">
+
                             <div class="input-group-append">
                                 <span class="input-group-text">
                                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -52,7 +58,7 @@
                     </div>
                 </div>
 
-                <!-- * sidebar-search  -->
+                // ! Gerenciar Usuários
                 <div class="sidebar-menu">
                     <ul>
                         <li class="header-menu">
@@ -61,26 +67,35 @@
                         <li class="sidebar-dropdown">
                             <a>
                                 <i class="fa fa-user"></i>
+                                // * Usuários
                                 <span>Usuários</span>
                             </a>
+                            // * Funções do Usuário
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="principal.php?link=2">Adicionar
+                                        <a href="principal.php?link=2">Cadastrar Usuário
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="principal.php?link=3">Listar</a>
+                                        <a href="principal.php?link=3">Listar Usuários</a>
+                                    </li>
+                                    <li>
+                                        <a href="principal.php?link=3">Consultar Usuário</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+
+                    // ! Gerenciar Site
                         <li class="header-menu">
                             <span>Gerenciar Site</span>
                         </li>
                         <li class="sidebar-dropdown">
+                        // * Funções do site - Banners
                             <a>
                                 <i class="fa fa-image"></i>
+                                // * Banners
                                 <span>Banners</span>
                             </a>
                             <div class="sidebar-submenu">
@@ -95,8 +110,10 @@
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
+                        // * Funções do site - Serviços
                             <a>
                                 <i class="fa fa-truck"></i>
+                                // * Serviços
                                 <span>Serviços</span>
                             </a>
                             <div class="sidebar-submenu">
@@ -138,7 +155,7 @@
                     $pag[1] = "home_principal.php";
 
                     // * LINKS PARA USUARIO
-                    $pag[2] = "adicionar_users.php";
+                    $pag[2] = "frm_adicionarUser.php";
                     $pag[3] = "lista_user.php";
 
                     // * LINKS PARA BANNER

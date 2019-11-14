@@ -7,7 +7,7 @@
 
         <input type="text" class="input-info" name="" placeholder="CPF" required>
 
-        <input type="text" class="input-info" name="" placeholder="CNPJ" required>
+        <input type="text" class="input-info" name="" placeholder="Matricula" required>
 
         <input type="text" class="input-contato" name="" placeholder="Email" required>
 
