@@ -24,11 +24,11 @@
     
         <nav id="menu">
             <ul>
-                <li><a href="#segunda">Quem somos</a></li>
-                <li><a href="#terceira">Serviços</a></li>
-                <li><a href="#quarta">Planos</a></li>
-                <li><a href="#quinta">Localização</a></li>
-                <li><a href="#sexta">Contato</a></li>
+                <li><a href="index.php#segunda">Quem somos</a></li>
+                <li><a href="index.php#terceira">Serviços</a></li>
+                <li><a href="#planos.php">Planos</a></li>
+                <li><a href="index.php#quinta">Localização</a></li>
+                <li><a href="index.php#sexta">Contato</a></li>
             </ul>
         </nav>
 
@@ -49,5 +49,21 @@
         </p>        
     </section>
     </main>
+
+    <!-- Footer - Rodapé -->
+    <footer class="rodape">
+        <br>
+        <div class="area_adm">
+            <a href="admin/login.php" class="adm">
+                <span>
+                    Área Administrativa
+                </span>
+            </a>
+        </div>    
+        <br>                       
+        <span class="cop">
+            Copyright © ShellCode 2019. Todos os direitos reservados.
+        </span>
+    </footer>
 </body>
 </html>

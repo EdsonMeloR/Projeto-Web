@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                // ! Gerenciar Usuários
+                 <!-- ! Gerenciar Usuários -->
                 <div class="sidebar-menu">
                     <ul>
                         <li class="header-menu">
@@ -67,10 +67,10 @@
                         <li class="sidebar-dropdown">
                             <a>
                                 <i class="fa fa-user"></i>
-                                // * Usuários
+                                 <!-- * Usuários -->
                                 <span>Usuários</span>
                             </a>
-                            // * Funções do Usuário
+                             <!-- * Funções do Usuário -->
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
@@ -87,15 +87,15 @@
                             </div>
                         </li>
 
-                    // ! Gerenciar Site
+                     <!-- ! Gerenciar Site -->
                         <li class="header-menu">
                             <span>Gerenciar Site</span>
                         </li>
                         <li class="sidebar-dropdown">
-                        // * Funções do site - Banners
+                         <!-- * Funções do site - Banners -->
                             <a>
                                 <i class="fa fa-image"></i>
-                                // * Banners
+                                 <!-- * Banners -->
                                 <span>Banners</span>
                             </a>
                             <div class="sidebar-submenu">
@@ -110,10 +110,10 @@
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
-                        // * Funções do site - Serviços
+                         <!-- * Funções do site - Serviços -->
                             <a>
                                 <i class="fa fa-truck"></i>
-                                // * Serviços
+                                 <!-- * Serviços -->
                                 <span>Serviços</span>
                             </a>
                             <div class="sidebar-submenu">
