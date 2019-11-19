@@ -1,9 +1,8 @@
 <?php
-
     class Plano
     {
     
-        // ! ATRIBUTOS DA CLASSE PLANO
+        //* ATRIBUTOS DA CLASSE PLANO
         
         private $id;
         private $nomePlano;
@@ -12,9 +11,9 @@
         private $duracaoPlano;
         private $limitePedido;
 
-        // ! METODOS DA CLASSE PLANO
+        //* METODOS DA CLASSE PLANO
         
-        // * ID
+        //* ID
         
         public function getId()
         {
@@ -26,7 +25,7 @@
             $this->id = $value;
         }
         
-        // * NOME PLANO
+        //* NOME PLANO
 
         public function getNomePlano()
         {
@@ -38,7 +37,7 @@
             $this->nomePlano = $value;
         }
         
-        // * DESCRIÇÃO DO PLANO
+        //* DESCRIÇÃO DO PLANO
 
         public function getDescricaoPlano()
         {
@@ -51,7 +50,7 @@
             
         }
         
-        // * VALOR DO PLANO
+        //* VALOR DO PLANO
 
         public function getValorPlano()
         {
@@ -63,7 +62,7 @@
             $this->valorPlano = $value;
         }
         
-        // * DURAÇÃO DO PLANO
+        //* DURAÇÃO DO PLANO
 
         public function getDuracaoPlano()
         {
@@ -75,7 +74,7 @@
             $this->duracaoPlano = $value;
         }
         
-        // * LIMITE DO PEDIDO
+        //* LIMITE DO PEDIDO
 
         public function getLimitePedido()
         {
@@ -87,7 +86,7 @@
             $this->limitePedido = $value;
         }
         
-        // ! CONSTRUTOR DAS VARIÁVEIS
+        //* CONSTRUTOR DAS VARIÁVEIS
         
         public function __construct($_nomePlano="", $_descricaoPlano="", $_valorPlano="", $_duracaoPlano="", $_limitePedido="")
         {
@@ -98,7 +97,7 @@
             $this->limitePedido = $_limitePedido;
         }
         
-        // ! PEGA VALORES PARA AS VARIAVEIS
+        //* PEGA VALORES PARA AS VARIAVEIS
         
         public function setData($data)
         {
@@ -109,7 +108,5 @@
             $this->setDuracaoPlano($data['']);
             $this->setLimitePedido($data['']);
         }
-        
     }
-
 ?>

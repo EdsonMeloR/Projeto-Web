@@ -33,9 +33,8 @@
                 <li><a href="#sexta">Contato</a></li>
             </ul>
         </nav>
-
         <div class="btn-login">
-            <a href="login_user.php" class="fa fa-user"></a>
+            <a href="area_cliente.php" class="fa fa-user"></a>
         </div>
     </header>    
 

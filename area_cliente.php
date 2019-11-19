@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Área do Usuário</title>
+    <title>Área do Cliente</title>
     <!-- ! Links de CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="../img/icone.png">
@@ -22,7 +22,7 @@
             font-size: 2em; 
             text-align:center; 
             font-weight:bold; 
-            padding-bottom:0.7em;">Área do Usuário</h1>
+            padding-bottom:0.7em;">Área do Cliente</h1>
 
             <div class="field_forms">
                 <label for="user_name">

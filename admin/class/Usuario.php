@@ -99,7 +99,7 @@
             $this->nivel = $value;
         }
 
-        // ! CONTRUTOR DAS VARIAVEIS
+        //* CONTRUTOR DAS VARIAVEIS
 
         public function __construct($_nome="", $_cpf="", $_telefone="", $_senha="", $_email="", $_nivel="")
         {
@@ -111,17 +111,16 @@
             $this->nivel = $_nivel;
         }
         
-        
-        // ! PEGA VALORES PARA AS VARIAVEIS
+        //* PEGA VALORES PARA AS VARIAVEIS
 
         public function setData($data)
         {
-            $this-setId($data['']);
-            $this-setCpf($data['']);
-            $this-setTelefone($data['']);
-            $this-setSenha($data['']);
-            $this-setEmail($data['']);
-            $this-setNivel($data['']);
+            $this->setId($data['']);
+            $this->setCpf($data['']);
+            $this->setTelefone($data['']);
+            $this->setSenha($data['']);
+            $this->setEmail($data['']);
+            $this->setNivel($data['']);
         }
     }
 
