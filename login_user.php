@@ -49,6 +49,13 @@
             </div>
 
             <!-- BOTÃO CADASTRAR -->
+            
+            <p class="text--center ">
+                Não possui uma conta?
+                <a href="conta_user.php">
+                    Criar conta
+                </a>
+            </p>
         </form>    
         
     </div>  

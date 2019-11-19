@@ -254,6 +254,13 @@ body
     padding: 10px 20px;
 }
 
+.barra-perquisar
+{
+    background: #3a3f48;
+    border-radius: 3px;
+    padding: 6px 6px 6px 6px;    
+}
+
 
 /*----------------------sidebar-menu-------------------------*/
 
@@ -292,9 +299,9 @@ body
 }
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown>a:after {
-    font-family: Arial;
+    font-family: FontAwesome;
     font-weight: 900;
-    content: "\f105";
+    content: "\f054";
     font-style: normal;
     display: inline-block;
     font-style: normal;
@@ -321,7 +328,7 @@ body
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
     content: "\f111";
-    font-family: Arial;
+    font-family: FontAwesome;
     font-weight: 400;
     font-style: normal;
     cursor: pointer;

@@ -695,3 +695,13 @@ input[type='submit']
 .login input[type='submit']:hover {
   background-color: #ffae00de;
 }
+
+.text--center 
+{
+    text-align: center;
+}
+
+.text--center 
+{
+    opacity: 50%;
+}

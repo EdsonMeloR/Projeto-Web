@@ -47,13 +47,13 @@
                     <div>
                         <div class="input-group">
 
-                            <input type="text" class="form-control search-menu" placeholder="Search">
-
-                            <div class="input-group-append">
+                            <div class="barra-perquisar">
+                                <input type="text" class="form-control search-menu" placeholder="Search">
                                 <span class="input-group-text">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </span>
-                            </div>
+                            </div>                            
+
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                             <a>
                                 <i class="fa fa-user"></i>
                                  <!-- * Usuários -->
-                                <span>Usuários</span>
+                                <span>Usuários</span>                                                               
                             </a>
                              <!-- * Funções do Usuário -->
                             <div class="sidebar-submenu">
