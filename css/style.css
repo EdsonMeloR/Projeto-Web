@@ -705,3 +705,36 @@ input[type='submit']
 {
     opacity: 50%;
 }
+
+/* ============================================================================================================================================= */
+
+/* ! EDITANDO PAGINA DE PLANOS */
+
+.planos
+{
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    background-color: #500707;
+}
+
+.contrato
+{
+    background-color:yellowgreen;
+    width: 50%;
+    margin: 3px 10px 3px 10px;  
+    text-align: left;
+    display: grid;
+         
+}
+
+.contrato a
+{
+    font-size: 0.6em;
+    font-family: Arila;    
+    padding: 0px 3px 0px 3px;
+    cursor: default;
+    text-underline-offset:
+    
+}
+

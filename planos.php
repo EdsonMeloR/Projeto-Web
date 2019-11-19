@@ -43,10 +43,35 @@
         <h1>P L A N O S</h1>
     </section>
 
-    <section class="conteudos" style="background: rgb(150, 95, 200);">
-        <p>A Prosperity Log oferece diversos planos para nossos clientes, melhorando
+    <section class="conteudos" style="background: rgb(150, 95, 200);">  
+        <div class="planos">
+            <div class="contrato">
+                <a >Nome plano</a>
+                <hr> 
+                <a >Descrição plano</a> 
+                <hr> 
+                <a >Valor plano</a> 
+                <hr> 
+                <a >Duração plano</a> 
+                <hr> 
+                <a >Limite Pedido</a>            
+                <hr> 
+            </div> 
+
+            <div class="contrato">
+                plano 2           
+            </div>
             
-        </p>        
+            <div class="contrato">
+                plano 3
+            </div>
+
+            <div class="contrato">
+                plano 4
+            </div>
+
+        </div>
+
     </section>
     </main>
 
