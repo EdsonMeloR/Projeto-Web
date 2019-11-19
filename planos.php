@@ -43,10 +43,31 @@
         <h1>P L A N O S</h1>
     </section>
 
-    <section class="conteudos" style="background: rgb(150, 95, 200);">
-        <p>A Prosperity Log oferece diversos planos para nossos clientes, melhorando
-            
-        </p>        
+    <section class="conteudos" style="background: rgb(150, 95, 200);">              
+        <div class="plano">
+            <div class="contrato">
+                <p class="txt_plano"> Nome do plano <?php ?>
+                    <span> Planos Iniciante <?php ?> </span>
+                </p>
+
+                <p class="txt_plano">  Descrição <?php ?>
+                    <span> O plano Iniciante oferece
+                    quantidades minimas de cargas<?php ?> </span>
+                </p>
+
+                <p class="txt_plano"> Valor por mes <?php ?>
+                    <span> R̶$̶ ̶4̶5̶0̶,̶0̶0̶  por R$ 235,00 <?php ?> </span>
+                </p>
+
+                <p class="txt_plano"> Duração do plano <?php ?>
+                    <span>  o plano tem duração de 3 meses <?php ?> </span>
+                </p>
+
+                <p class="txt_plano"> Limite<?php ?>
+                    <span> 350 pedidos por mes<?php ?> </span>
+                </p>
+            </div>
+        </div>        
     </section>
     </main>
 

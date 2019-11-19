@@ -705,3 +705,19 @@ input[type='submit']
 {
     opacity: 50%;
 }
+
+/* ============================================================================================================================================= */
+
+/* ! EDITANDO PAGINA DE PLANOS */
+
+.plano
+{
+    background-color:yellowgreen; 
+}
+
+.contrato
+{
+    background-color: #eee;
+    width: 45%;
+    height: 55%;
+}
