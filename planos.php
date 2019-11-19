@@ -43,31 +43,35 @@
         <h1>P L A N O S</h1>
     </section>
 
-    <section class="conteudos" style="background: rgb(150, 95, 200);">              
-        <div class="plano">
+    <section class="conteudos" style="background: rgb(150, 95, 200);">  
+        <div class="planos">
             <div class="contrato">
-                <p class="txt_plano"> Nome do plano <?php ?>
-                    <span> Planos Iniciante <?php ?> </span>
-                </p>
+                <a >Nome plano</a>
+                <hr> 
+                <a >Descrição plano</a> 
+                <hr> 
+                <a >Valor plano</a> 
+                <hr> 
+                <a >Duração plano</a> 
+                <hr> 
+                <a >Limite Pedido</a>            
+                <hr> 
+            </div> 
 
-                <p class="txt_plano">  Descrição <?php ?>
-                    <span> O plano Iniciante oferece
-                    quantidades minimas de cargas<?php ?> </span>
-                </p>
-
-                <p class="txt_plano"> Valor por mes <?php ?>
-                    <span> R̶$̶ ̶4̶5̶0̶,̶0̶0̶  por R$ 235,00 <?php ?> </span>
-                </p>
-
-                <p class="txt_plano"> Duração do plano <?php ?>
-                    <span>  o plano tem duração de 3 meses <?php ?> </span>
-                </p>
-
-                <p class="txt_plano"> Limite<?php ?>
-                    <span> 350 pedidos por mes<?php ?> </span>
-                </p>
+            <div class="contrato">
+                plano 2           
             </div>
-        </div>        
+            
+            <div class="contrato">
+                plano 3
+            </div>
+
+            <div class="contrato">
+                plano 4
+            </div>
+
+        </div>
+
     </section>
     </main>
 
