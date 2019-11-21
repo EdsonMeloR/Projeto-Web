@@ -33,7 +33,7 @@
         </nav>
 
         <div class="btn-login">
-            <a href="login.php" class="fa fa-user"></a>
+            <a href="area_cliente.php" class="fa fa-user"></a>
         </div>
     </header>  
     
@@ -43,33 +43,55 @@
         <h1>P L A N O S</h1>
     </section>
 
-    <section class="conteudos" style="background: rgb(150, 95, 200);">  
-        <div class="planos">
-            <div class="contrato">
-                <a >Nome plano</a>
-                <hr> 
-                <a >Descrição plano</a> 
-                <hr> 
-                <a >Valor plano</a> 
-                <hr> 
-                <a >Duração plano</a> 
-                <hr> 
-                <a >Limite Pedido</a>            
-                <hr> 
+    <section class="conteudos_planos" style="background: rgb(150, 95, 200);">  
+        <p>Com os planos da Prosperity Log, nossos clientes tem mais controle sobre
+           suas mercadorias 
+        </p>
+
+        <div class="planos" id="tabela_planos"> 
+            <div class="plano">
+                <h3>Basico <span>$150</span> </h3>
+                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <ul>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                </ul>
             </div> 
-
-            <div class="contrato">
-                plano 2           
-            </div>
             
-            <div class="contrato">
-                plano 3
+            <div class="plano">
+                <h3>Medio <span>$230</span> </h3>
+                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <ul>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                </ul>
             </div>
 
-            <div class="contrato">
-                plano 4
+            <div class="plano">
+                <h3>Empresarial <span>$450</span> </h3>
+                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <ul>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                </ul>
             </div>
 
+            <div class="plano">
+                <h3>Personalizado <span></span> </h3>
+                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <ul>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                    <li> <b></b> Descrição </li>
+                </ul>
+            </div> 
         </div>
 
     </section>
