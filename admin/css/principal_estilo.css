@@ -383,7 +383,7 @@ body
 /*--------------------------page-content-----------------------------*/
 
 .page-wrapper .page-content {
-    display: inline-block;
+    display: flex;
     width: 100%;
     padding-left: 0px;
     padding-top: 20px;
@@ -604,3 +604,9 @@ body
 {
     opacity: 1;
 }
+
+/* ---------------------------------------------------------------------------- */
+
+/* ! EDITANDO LISTA DE USUARIOS */
+
+/* https://codepen.io/alassetter/pen/cyrfB */

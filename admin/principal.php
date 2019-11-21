@@ -76,54 +76,42 @@
                                     <li>
                                         <a href="principal.php?link=2">Cadastrar Usuário
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="principal.php?link=3">Listar Usuários</a>
-                                    </li>
-                                    <li>
-                                        <a href="principal.php?link=3">Consultar Usuário</a>
-                                    </li>
+                                    </li>                                    
                                 </ul>
                             </div>
                         </li>
 
                      <!-- ! Gerenciar Site -->
                         <li class="header-menu">
-                            <span>Gerenciar Site</span>
+                            <span>Gerenciar Negócio</span>
                         </li>
                         <li class="sidebar-dropdown">
                          <!-- * Funções do site - Banners -->
                             <a>
-                                <i class="fa fa-image"></i>
+                                <i class="fa fa-file-text-o"></i>
                                  <!-- * Banners -->
-                                <span>Banners</span>
+                                <span>Pedidos</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
                                         <a href="principal.php?link=">Adicionar</a>
-                                    </li>
-                                    <li>
-                                        <a href="principal.php?link=">Listar</a>
-                                    </li>                                   
+                                    </li>                                                                      
                                 </ul>
                             </div>
                         </li>
                         <li class="sidebar-dropdown">
                          <!-- * Funções do site - Serviços -->
                             <a>
-                                <i class="fa fa-truck"></i>
+                                <i class="fa  fa-pencil-square-o"></i>
                                  <!-- * Serviços -->
-                                <span>Serviços</span>
+                                <span>Planos</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
                                         <a href="principal.php?link=">Adicionar</a>
-                                    </li>
-                                    <li>
-                                        <a href="principal.php?link=">Listar</a>
-                                    </li>
+                                    </li>                                    
                                 </ul>
                             </div>
                         </li>
@@ -144,7 +132,7 @@
 
         <!-- * sidebar-wrapper  -->
         <main class="page-content">
-            <div class="conteudo_frm">
+            <div class="conteudo_frm_l">
             
                 <?php
 
@@ -155,16 +143,13 @@
                     $pag[1] = "home_principal.php";
 
                     // * LINKS PARA USUARIO
-                    $pag[2] = "frm_adicionarUser.php";
-                    $pag[3] = "lista_user.php";
+                    $pag[2] = "frm_adicionarUser.php";                    
 
-                    // * LINKS PARA BANNER
-                    $pag[4] = "adicionar_banner.php";
-                    $pag[5] = "lista_banner.php";
+                    // * LINKS PARA PEDIDOS
+                    $pag[3] = "lista_pedido.php";                    
 
-                    // * LINKS PARA SERVIÇOS
-                    $pag[6] = "adicionar_servico.php";
-                    $pag[7] = "lista_servico.php";
+                    // * LINKS PARA PLANOS
+                    $pag[4] = "frm_adicionarPlano.php";                    
 
                     if(!empty($link))
                     {
@@ -188,6 +173,7 @@
 
                 ?>                
             </div>
+           
         </main>
         <!-- * page-content" -->
     </div>
