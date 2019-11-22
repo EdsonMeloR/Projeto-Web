@@ -20,7 +20,7 @@
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
                 <div class="sidebar-brand">
-                    <a href="principal.php">Área Administrativa</a>
+                    <a href="principal.php?link=">Área Administrativa</a>
                 </div>
                 <div class="sidebar-header">
 

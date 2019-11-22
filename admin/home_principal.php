@@ -1,3 +1,8 @@
-<div class="ultimas_atualizacoes">
-    <h1>TESTE DE ATUALIZAÇÃO</h1>
+<div class="welcome">
+    <p>Seja Bem Vindo</p>
+    <i>Lucas Henrique</i>
+    <a>Á Area Administrativa</a>
+    <div class="centro-home">
+
+    </div>
 </div>
