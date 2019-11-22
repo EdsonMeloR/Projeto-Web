@@ -79,7 +79,7 @@
             <!-- BOTÃO -->
 
             <div class="field_forms">
-                <input type="submit" value="Criar Conta" name="btn_criar_user">                
+                <input type="submit" value="Cadastrar-se" name="btn_cadastrar_user">                
             </div>
         </form>    
     </div>  

@@ -15,7 +15,7 @@
 
     <div class="box">
 
-        <form action="op_user.php" class="frm login">
+        <form action="op_cliente.php" class="frm login">
             <!-- USUÁRIO -->
 
             <h1 style="font-family:Arial; 
@@ -52,7 +52,7 @@
             
             <p class="text--center ">
                 Não possui uma conta?
-                <a href="conta_user.php">
+                <a href="frm_cliente.php">
                     Criar conta
                 </a>
             </p>
