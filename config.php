@@ -8,11 +8,11 @@
 
     // * INFORMAÇÕES PARA CONEXÃO COM O SERVIDOR DE BANCO DE DADOS
 
-    define ('IP_SERVER_DB', '127.0.0.1');
-    define ('HOSTNAME','PC_HOME');
-    define ('NOME_BANCO','prosperitydb');
-    define ('USER_DB','root');
-    define ('PASS_DB','');
+    // define ('IP_SERVER_DB', '127.0.0.1');
+    // define ('HOSTNAME','PC_HOME');
+    // define ('NOME_BANCO','prosperitydb');
+    // define ('USER_DB','root');
+    // define ('PASS_DB','');
 
     // * INICIA A SESSÃO DO USUARIO
 
