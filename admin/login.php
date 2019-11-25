@@ -15,7 +15,7 @@
 
     <div class="box">
 
-        <form action="op_user.php" class="frm login" method="POST">
+        <form action="op_clienteUser.php" class="frm login" method="POST">
             <!-- USUÁRIO -->
 
             <div class="field_forms">

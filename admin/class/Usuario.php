@@ -115,13 +115,16 @@
 
         public function setData($data)
         {
-            $this->setId($data['']);
-            $this->setCpf($data['']);
-            $this->setTelefone($data['']);
-            $this->setSenha($data['']);
-            $this->setEmail($data['']);
-            $this->setNivel($data['']);
+            $this->setId($data['IdUsuario']);
+            $this->setNome($data['Nome']);
+            $this->setCpf($data['Cpf']);
+            $this->setTelefone($data['Telefone']);
+            $this->setSenha($data['Senha']);
+            $this->setEmail($data['Email']);
+            $this->setNivel($data['idNiveis']);
         }
+
+
         public function insert()
         {
             $sql = new Sql();
@@ -140,10 +143,30 @@
                 $this->setData($resultado[0]);
             }
         }
+
+
         public function Alterar()
         {
             $sql = new Sql();
             $sql->select("CALL update_usuario(:telefone,:email,:)");
+        }
+
+        public function FazerLogin($_cpf, $_senha)
+        {
+            $sql = new Sql();
+            $_senhaCript = md5($_senha);
+            $resultado = $sql->select('SELECT * FROM usuario WHERE Cpf = :Cpf AND Senha = :Senha',
+                array
+                (
+                    ':Cpf' => $_cpf,
+                    ':Senha' => $_senhaCript
+                )
+            );
+
+            if(count($resultado) > 0 )
+            {
+                $this->setData($resultado[0]);
+            }
         }
 
     }

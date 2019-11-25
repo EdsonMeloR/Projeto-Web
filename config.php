@@ -23,12 +23,12 @@
 
     // * CARREGAR AS CLASSES DO PROJETO
 
-    spl_autoload_register(function($name_class)
+    spl_autoload_register(function($nome_classes)
     {
         $server_str = $_SERVER['REQUEST_URI'];
         $caminho = (strpos($server_str, 'admin') !==false)?'class':'admin/class';
-        $nome_arquivo = $caminho.DIRECTORY_SEPARATOR.$name_class.".php";
-        if(file_exists($name_class))
+        $nome_arquivo = $caminho.DIRECTORY_SEPARATOR.$nome_classes.".php";
+        if(file_exists($nome_arquivo))
         {
             require_once($nome_arquivo);
         }
