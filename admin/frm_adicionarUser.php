@@ -16,13 +16,6 @@
             border: 3px solid red;
         }
 
-        .m_invalido
-        {
-            content: "\f00d";
-            font-family: FontAwesome;
-            font-size: 15px;
-        }
-
     </style>
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -333,9 +326,7 @@
                         input.addClass('valido');
                     } else 
                     {
-                        input.addClass('invalido');
-                        input.addClass('m_invalido');
-                        
+                        input.addClass('invalido'); 
                     }
                 }, 500);
 
@@ -364,6 +355,25 @@
             <input type="text" class="input-contato" name="ins_senha_user" placeholder="Senha" required>
 
             <input type="text" class="input-contato" name="ins_ConfirmaSenha_user" placeholder="Confirmar Senha" required>
+
+            <?php
+                require_once('../config.php');
+                $user = Usuario::ListaUser();
+            ?>
+
+            <select name="select_nivel" class="input-contato">
+
+                <?php
+
+                    foreach($user as $us)
+                    {
+
+                ?>
+                <option class="input-contato" value=" <?php ?>"></option>
+
+                <?php } ?>
+
+            </select>
 
             <input type="submit" class="btn_form" value="Enviar">
         </form>
