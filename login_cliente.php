@@ -15,7 +15,7 @@
 
     <div class="box">
 
-        <form action="op_cliente.php" class="frm login">
+        <form action="admin/principal.php" class="frm login">
             <!-- USUÁRIO -->
 
             <h1 style="font-family:Arial; 
@@ -45,7 +45,7 @@
             <!-- BOTÃO LOGIN -->
 
             <div class="field_forms">
-                <input type="submit" value="Fazer Login">
+                <input type="submit" value="Fazer Login" href="admin/principal.php">
             </div>
 
             <!-- BOTÃO CADASTRAR -->

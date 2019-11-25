@@ -687,5 +687,10 @@ body
 
  .welcome i
  {
-     font-size: 35px;
+    font-size: 35px;    
+ }
+
+ .centro-home
+ {
+    font-size: 65px;
  }

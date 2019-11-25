@@ -297,12 +297,9 @@ img
 
 .cop
 {
-
     text-align: center;        
-    margin-left: 40%; 
-    margin-top: 50px;
+    margin-left: 40%;       
 }
-
 
 /* * Radius */
 .radius{border-radius: 27px;}

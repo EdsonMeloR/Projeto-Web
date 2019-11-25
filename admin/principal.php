@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Área administrativa</title>
+    <title>Área do Usuário</title>
 
     <link rel="stylesheet" href="css/principal_estilo.css">
     <link rel="shortcut icon" href="img/administrador.png">
@@ -20,7 +20,7 @@
         <nav id="sidebar" class="sidebar-wrapper">
             <div class="sidebar-content">
                 <div class="sidebar-brand">
-                    <a href="principal.php?link=">Área Administrativa</a>
+                    <a href="principal.php?link=">Área do Cliente</a>
                 </div>
                 <div class="sidebar-header">
 
@@ -32,7 +32,7 @@
                         <span class="user-name">
                             Lucas Henrique
                         </span>
-                        <span class="user-role">Administrator</span>
+                        <span class="user-role">Adria</span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
@@ -68,14 +68,13 @@
                             <a>
                                 <i class="fa fa-user"></i>
                                  <!-- * Usuários -->
-                                <span>Usuários</span>                                                               
+                                <span>Minhas informações</span>                                                               
                             </a>
                              <!-- * Funções do Usuário -->
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="principal.php?link=2">Cadastrar Usuário
-                                        </a>
+                                        <a href="principal.php?link=2"> Editar</a>
                                     </li>                                    
                                 </ul>
                             </div>
@@ -143,7 +142,7 @@
                     $pag[1] = "home_principal.php";
 
                     // * LINKS PARA USUARIO
-                    $pag[2] = "frm_adicionarUser.php";                    
+                    $pag[2] = "alterar_info_cliente.php";                    
 
                     // * LINKS PARA PEDIDOS
                     $pag[3] = "lista_pedido.php";                    

@@ -51,7 +51,7 @@
         <div class="planos" id="tabela_planos"> 
             <div class="plano">
                 <h3>Basico <span>$150</span> </h3>
-                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <a class="login_user" href="login_cliente.php">Fazer Login</a>
                 <ul>
                     <li> <b></b> Descrição </li>
                     <li> <b></b> Descrição </li>
@@ -62,7 +62,7 @@
             
             <div class="plano">
                 <h3>Medio <span>$230</span> </h3>
-                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <a class="login_user" href="login_cliente.php">Fazer Login</a>
                 <ul>
                     <li> <b></b> Descrição </li>
                     <li> <b></b> Descrição </li>
@@ -73,7 +73,7 @@
 
             <div class="plano">
                 <h3>Empresarial <span>$450</span> </h3>
-                <a class="login_user" href="area_cliente.php">Fazer Login</a>
+                <a class="login_user" href="login_cliente.php">Fazer Login</a>
                 <ul>
                     <li> <b></b> Descrição </li>
                     <li> <b></b> Descrição </li>
@@ -81,17 +81,7 @@
                     <li> <b></b> Descrição </li>
                 </ul>
             </div>
-
-            <div class="plano">
-                <h3>Personalizado <span></span> </h3>
-                <a class="login_user" href="area_cliente.php">Fazer Login</a>
-                <ul>
-                    <li> <b></b> Descrição </li>
-                    <li> <b></b> Descrição </li>
-                    <li> <b></b> Descrição </li>
-                    <li> <b></b> Descrição </li>
-                </ul>
-            </div> 
+ 
         </div>
 
     </section>
