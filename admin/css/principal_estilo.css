@@ -529,13 +529,13 @@ body
     font-size: 2em;
     padding-bottom: 2px;
     font-family: arial;
-    color: #1e2229;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .form-principal
 {
-    width: 100%;
+    width: 65%;
     margin: 0 auto;
     float: left;
 }
@@ -615,7 +615,7 @@ body
     font-family: sans-serif;
     color: rgb(220,220,220);
     padding: 0px;
-    width: 100%;
+    width: 65%;
     overflow-x: hidden;
 }
 
@@ -639,7 +639,7 @@ body
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     padding: 1em;
-    color: rgba(0,0,0,0.45);
+    color: rgb(255, 255, 255);
     text-shadow: 0 0 1px rgba(0,0,0,0.1);
     font-size: 1.5em;
 }
@@ -658,7 +658,7 @@ body
 }
 .flat-table-1 
 {
-    background: #336ca6;
+    background: #282c33;
 }
 .flat-table-1 tr:hover 
 {

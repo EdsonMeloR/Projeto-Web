@@ -9,7 +9,7 @@
 
         public function __construct()
         {
-            $this->cn = new PDO("mysql:host=localhost:dbname=prosperitydb",'root','');
+            $this->cn = new PDO("mysql:host=localhost;dbname=prosperitydb",'root','');   
         }
 
         public function setParams($comando, $parametros = array())

@@ -108,5 +108,10 @@
             $this->setDuracaoPlano($data['']);
             $this->setLimitePedido($data['']);
         }
+
+        public function InsertPlano()
+        {
+            
+        }
     }
 ?>
