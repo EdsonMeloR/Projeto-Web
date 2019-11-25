@@ -87,7 +87,9 @@
             $this->nomeContato = $value;
         }
 
-        //* Métodos da classe        
+        //* Métodos da classe
+
+        //* Inserir cliente 
         Public function Insert()
         {
             $sql = new Sql();
@@ -107,6 +109,11 @@
                 $this->setData($resultado[0]);
             }         
         }
+        if(nae)
+        if(nac)
+        if(sc)
+
+        //* Método 
 
 
 
