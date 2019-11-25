@@ -22,7 +22,7 @@
         {
             $this->id = $value;
         }
-        //* Razão Social ?????
+        //* Razão Social
         public function GetRazaoS()
         {
             return $this->razaosocial;
@@ -50,8 +50,8 @@
         {
             $this->email = $value;
         }
-        //* Inscrição Estadual????
-        public function GetIncriçaoEstadual()
+        //* Inscrição Estadual
+        public function GetIncricaoEstadual()
         {
             return $this->inscricaoestadual;
         }
@@ -85,6 +85,27 @@
         public function SetNomeContato($value)
         {
             $this->nomeContato = $value;
+        }
+
+        //* Métodos da classe        
+        Public function Insert()
+        {
+            $sql = new Sql();
+            $resultado = $sql->select('CALL insert_cliente(:rzs, :cnpj, :email, :insc, :senha, :tel, :nomec)',
+            array
+            (
+                ':rzs'=>$this->GetRazaoS(),
+                ':cnpj'=>$this->GetCnpj(),
+                'email'=>$this->GetEmail(),
+                ':insc'=>$this->GetIncricaoEstadual(),
+                ':senha'=>$this->GetSenha(),
+                ':tel'=>$this->GetTelefone(),
+                ':nomec'=>$this->GetNomeContato()
+            ));
+            if(count($resultado)>0)
+            {
+                $this->setData($resultado[0]);
+            }         
         }
 
 
@@ -167,10 +188,10 @@
         //         ':email'=>$this->getEmail(),
         //         ':nvl'=>$this->getNivel()
         //     ));
-        //     if(count($resultado)>0)
-        //     {
-        //         $this->setData($resultado[0]);
-        //     }
+            // if(count($resultado)>0)
+            // {
+            //     $this->setData($resultado[0]);
+            // }
         // }
 
         // //* Alterar Usuario
