@@ -664,3 +664,33 @@ body
 {
     background: rgba(0,0,0,0.19);
 }
+ /* ================================================================================================================================= */
+ /* * ESTILO DA PAGINA DE APRESSENTAÇÃO */
+
+ .welcome
+ {
+    width: 100%;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;    
+ }
+
+ .welcome p
+ {
+    font-size: 50px;
+    margin-bottom: 15px;
+    border-bottom: 2px #fff;
+    border-bottom-style: groove;
+    border-bottom-width: thin;    
+ }
+
+ .welcome i
+ {
+    font-size: 35px;    
+ }
+
+ .centro-home
+ {
+    font-size: 65px;
+ }

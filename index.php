@@ -193,17 +193,9 @@
     <!-- Footer - Rodapé -->
     <footer class="rodape">
         <br>
-        <div class="area_adm">
-            <a href="admin/login.php" class="adm">
-                <span>
-                    Área Administrativa
-                </span>
-            </a>
-        </div>    
-        <br>                       
-        <span class="cop">
-            Copyright © ShellCode 2019. Todos os direitos reservados.
-        </span>
+        <br>
+        <br>
+        <i class="cop">Copyright © ShellCode 2019. Todos os direitos reservados.</i>        
     </footer>
          
 
