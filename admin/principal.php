@@ -25,7 +25,7 @@
                 <div class="sidebar-header">
 
                     <div class="user-pic">
-                        <img class="img-responsive img-rounded" src="img/idead.jfif" alt="User picture">
+                        <img class="img-responsive img-rounded" src="img/So-shawn-bio-mug.jpg" alt="User picture">
                     </div>
 
                     <div class="user-info">
@@ -82,7 +82,7 @@
 
                      <!-- ! Gerenciar Site -->
                         <li class="header-menu">
-                            <span>Gerenciar Negócio</span>
+                            <span>Gerenciar Pedidos/Planos</span>
                         </li>
                         <li class="sidebar-dropdown">
                          <!-- * Funções do site - Banners -->

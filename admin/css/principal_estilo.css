@@ -667,30 +667,92 @@ body
  /* ================================================================================================================================= */
  /* * ESTILO DA PAGINA DE APRESSENTAÇÃO */
 
- .welcome
- {
+.estrutura
+{
     width: 100%;
-    color: #fff;
+    margin: 0 auto;
+    text-align: left;
+    color: #989A8F;     
+}
+
+.plano_atual
+{
+    background-color: #ffffff;
+    height: 335px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.plano_atual ul li 
+{
+    float: left;
+    width: 199px;
+    text-align: center;
+    border-left: 1px solid #dddcd8;
+    text-decoration: none;
+}
+
+.topo
+{
+    background-color: #eae9e4;
+    height: 75px;    
+}
+
+h1
+{
+    padding-top: 20px;
+}
+
+.preco 
+{
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    font-size:20px;
+    color:#fff;
+    line-height:60px;
+    text-align:center;
+    background:#989A8F;
+    margin-left:70px;
+    margin-top:10px;
+}
+
+.info
+{
+    margin-top: 50px;
+}
+.info p
+{
+    font-size:13px;
     font-family: Arial;
+    padding:5px;
+}
+
+.info span
+{
     font-weight: bold;
-    text-align: center;    
- }
+}
 
- .welcome p
- {
-    font-size: 50px;
-    margin-bottom: 15px;
-    border-bottom: 2px #fff;
-    border-bottom-style: groove;
-    border-bottom-width: thin;    
- }
+.edit
+{
+    margin-top: 50px;    
+}
 
- .welcome i
- {
-    font-size: 35px;    
- }
+.botao
+{
+    border: 1px solid #989A8F;
+    padding: 10px 40px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #989A8F;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size:17px;
+}
 
- .centro-home
- {
-    font-size: 65px;
- }
+.fundo
+{
+    background-color: #5D4660;
+}
