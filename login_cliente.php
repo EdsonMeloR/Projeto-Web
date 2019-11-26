@@ -15,7 +15,7 @@
 
     <div class="box">
 
-        <form action="admin/principal.php" class="frm login">
+        <form action="admin/principal.php?" class="frm login">
             <!-- USUÁRIO -->
 
             <h1 style="font-family:Arial; 

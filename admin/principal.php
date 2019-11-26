@@ -131,7 +131,7 @@
 
         <!-- * sidebar-wrapper  -->
         <main class="page-content">
-            <div class="conteudo_frm_l">
+            <div class="conteudo-principal">
             
                 <?php
 
