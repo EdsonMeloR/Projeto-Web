@@ -104,13 +104,13 @@ body
     left: 0px;
 }
 
-@media screen and (min-width: 768px) 
+/* @media screen and (min-width: 768px) 
 {
     .page-wrapper.toggled .page-content 
     {
         padding-left: 300px;
     }
-}
+} */
 
 
 /*----------------show sidebar button----------------*/
@@ -383,21 +383,28 @@ body
 }
 /*--------------------------page-content-----------------------------*/
 
-.page-wrapper .page-content {
+.page-wrapper .page-content 
+{
     display: flex;
     width: 100%;
     padding-left: 0px;
     padding-top: 20px;
 }
 
-.page-wrapper .page-content>div {
-    padding: 20px 40px;
+.page-wrapper .page-content>div 
+{
+    padding: 20px 300px;
 }
 
-.page-wrapper .page-content {
+.page-wrapper .page-content 
+{
     overflow-x: hidden;
 }
 
+.conteudo-principal
+{
+    width: 100%;
+}
 
 /*------scroll bar---------------------*/
 
@@ -671,16 +678,22 @@ body
 {
     width: 100%;
     margin: 0 auto;
-    text-align: left;
-    color: #989A8F;     
+    text-align: center;
+    color: #989A8F; 
+    margin-left: 50%;    
+}
+
+.estrutura p
+{
+    font-size: 3em;
 }
 
 .plano_atual
 {
     background-color: #ffffff;
-    height: 335px;
+    height: 340px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 50%;    
 }
 
 .plano_atual ul li 
@@ -689,7 +702,7 @@ body
     width: 199px;
     text-align: center;
     border-left: 1px solid #dddcd8;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 .topo
@@ -705,16 +718,21 @@ h1
 
 .preco 
 {
-    width:60px;
-    height:60px;
-    border-radius:60px;
+    width:85px;
+    height:85px;
+    border-radius:85px;    
+    line-height:70px;
+    text-align:center;
+    background:#3a3f48;
+    margin-left:65px;
+    margin-top:10px;
+}
+
+.preco P
+{
     font-size:20px;
     color:#fff;
-    line-height:60px;
-    text-align:center;
-    background:#989A8F;
-    margin-left:70px;
-    margin-top:10px;
+    text-align: center;
 }
 
 .info
@@ -755,4 +773,50 @@ h1
 .fundo
 {
     background-color: #5D4660;
+}
+
+.welcome
+{    
+    color: #fff;      
+    text-align: center;
+}
+
+.welcome i
+{
+    font-size: 3em;
+}
+
+.welcome p
+{
+    padding-top: 10px;        
+    font-size: 1.5em;
+}
+
+.planos
+{
+    text-align: left;
+
+}
+
+.planos p
+{
+    font-size: 1.6em;
+    color: #fff;    
+}
+
+.ultimo-plano
+{
+    background-color: white;
+    width: 210px;
+    height: 350px;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-align: center;   
+}
+
+.ultimo-plano p 
+{
+    color: black;
+    font-size: 1.3em;
+    padding-top: 6px;
 }
