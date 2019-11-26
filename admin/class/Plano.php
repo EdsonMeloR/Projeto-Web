@@ -2,7 +2,7 @@
     class Plano
     {
     
-        //* ATRIBUTOS DA CLASSE PLANO
+        //* Atributos
         
         private $id;
         private $nomePlano;
@@ -11,10 +11,9 @@
         private $duracaoPlano;
         private $limitePedido;
 
-        //* METODOS DA CLASSE PLANO
-        
-        //* ID
-        
+        //* Métodos 
+
+        //* Id        
         public function getId()
         {
             return $this->id;
@@ -25,8 +24,7 @@
             $this->id = $value;
         }
         
-        //* NOME PLANO
-
+        //* Nome plano
         public function getNomePlano()
         {
             return $this->nomePlano;
@@ -37,8 +35,7 @@
             $this->nomePlano = $value;
         }
         
-        //* DESCRIÇÃO DO PLANO
-
+        //* Descrição do plano
         public function getDescricaoPlano()
         {
             return $this->descricaoPlano;
@@ -47,11 +44,9 @@
         public function setDescricaoPlano($value)
         {
             $this->descricaoPlano = $value;
-            
         }
         
-        //* VALOR DO PLANO
-
+        //* Valor do plano
         public function getValorPlano()
         {
             return $this->valorPlano;
@@ -62,8 +57,7 @@
             $this->valorPlano = $value;
         }
         
-        //* DURAÇÃO DO PLANO
-
+        //* Duração do plano
         public function getDuracaoPlano()
         {
             return $this->duracaoPlano;
@@ -73,9 +67,8 @@
         {
             $this->duracaoPlano = $value;
         }
-        
-        //* LIMITE DO PEDIDO
 
+        //* Limete De Pedido
         public function getLimitePedido()
         {
             return $this->limitePedido;
@@ -85,9 +78,18 @@
         {
             $this->limitePedido = $value;
         }
-        
-        //* CONSTRUTOR DAS VARIÁVEIS
-        
+
+        //* --------------------------------------Métodos da classe----------------------------------------
+
+        //* Gerar Listar De planos
+        public  static function ListaPlanos()
+        {
+            $sql = new Sql();
+            return $sql->select("SELECT * FROM plano order by idPlanos");
+        }
+
+        //* -------------------------------------------Métodos Construtores-------------------------------------
+
         public function __construct($_nomePlano="", $_descricaoPlano="", $_valorPlano="", $_duracaoPlano="", $_limitePedido="")
         {
             $this->nomePlano = $_nomePlano;
@@ -97,7 +99,7 @@
             $this->limitePedido = $_limitePedido;
         }
         
-        //* PEGA VALORES PARA AS VARIAVEIS
+        //* Armazena valores nas variaveis
         
         public function setData($data)
         {
@@ -107,11 +109,6 @@
             $this->setValorPlano($data['']);
             $this->setDuracaoPlano($data['']);
             $this->setLimitePedido($data['']);
-        }
-
-        public function InsertPlano()
-        {
-            
         }
     }
 ?>
