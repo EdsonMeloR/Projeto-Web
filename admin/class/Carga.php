@@ -138,6 +138,8 @@
         }
 
         //* Métodos 
+
+        //* Inserir Carga
         public function Insert()
         {
             $sql = new Sql();
@@ -158,11 +160,38 @@
             {
                 $this->setData($resultado[0]);
             }
-            // (_idtipo int,_idpedido int,_peso decimal(10,4),_largura decimal(10,2),_altura decimal(10,2)
- 			// 				,_comprimento decimal(10,2),_nomeproduto varchar(45), _detalhesproduto varchar(45),_valor decimal(10,2),_quantidade int)
-
         }
 
+        //* Atualizar Carga
+        public function Alterar($_peso, $_largura, $_altura, $_comprimento, $_nome, $_detalhe, $_quantidade, $_id, $_idtipo, $_valor)
+        {
+            $sql = new Sql();
+            $sql->select('CALL update_carga(:peso, :largura, :altura, :comprimento, :nome, :detalhe, :quantidade, :id, :idtipo, :valor)',
+            array
+            (
+                ':peso' = $_peso,
+                ':largura' = $_largura,
+                ':altura'= $_altura,
+                ':comprimento'= $_comprimento,
+                ':nome'= $_nome,
+                ':detalhe'= $_detalhe,
+                ':quantidade'= $_quantidade,
+                ':id'= $_id,
+                ':idtipo'= $_idtipo,
+                ':valor'= $_valor
+            ));
+        }
+
+        //* Listar cargas
+        public static function ListarCarga($_id)
+        {
+            $sql = new Sql();
+            return $sql->select('SELECT * FROM carga WHERE idPedido = :id',
+            array
+            (
+                ':id'= $_id
+            ));
+        }     
 
 
     } 
