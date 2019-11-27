@@ -122,6 +122,30 @@
             ));
         }
 
+        //* -----------------------------------Construtores --------------------------------
+        //* Construtor
+        public function __construct($_idped="", $_situacao="", $_dataped="", $_retirar="", $_user="", $_client="")
+        {
+            $this->idPedido = $_idped;
+            $this->situacao = $_situacao;
+            $this->datapedido = $_dataped;
+            $this->retirar = $_retirar;
+            $this->idUsuario = $_user;
+            $this->idCLiente = $_client;
+        }
+        
+        //* Armazena valores nas variaveis
+        
+        public function setData($data)
+        {
+            $this->SetIdPed($data['idPedidos']);
+            $this->SetSituacao($data['Situacao']);
+            $this->SetDataPed($data['DataPedido']);
+            $this->SetRetirar($data['Retirar']);
+            $this->SetIdUser($data['Usuario_idUsuario']);
+            $this->SetIdCli($data['cliente_IdCliente']);
+        }
+
              
     }
 ?>
