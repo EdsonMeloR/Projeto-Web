@@ -103,12 +103,12 @@
         
         public function setData($data)
         {
-            $this->setId($data['']);
-            $this->setNomePlano($data['']);
-            $this->setDescricaoPlano($data['']);
-            $this->setValorPlano($data['']);
-            $this->setDuracaoPlano($data['']);
-            $this->setLimitePedido($data['']);
+            $this->setId($data['idPlano']);
+            $this->setNomePlano($data['NomePlano']);
+            $this->setDescricaoPlano($data['DescricaoPlano']);
+            $this->setValorPlano($data['ValorPlano']);
+            $this->setDuracaoPlano($data['DuracaoPlano']);
+            $this->setLimitePedido($data['LimitePedidos']);
         }
     }
 ?>
