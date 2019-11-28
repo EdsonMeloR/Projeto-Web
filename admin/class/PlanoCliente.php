@@ -112,6 +112,36 @@
         }
 
         //* Consultar Plano especifico
+        public function ConsultarPlano($_id)
+        {
+            $sql = new Sql();
+            $sql->select('SELECT * FROM planocliente WHERE idPlano = :id',
+            array
+            (
+                ':id' = $_id
+            ));
+        }
+
+        //* ------------------------- Construtor -----------------------------------
+        public function __construct($_idPlanoCli, $_DataIni, $_DataTerm, $_Desconto, $_idCli, $_idPlano)
+        {
+            $this->idPlano = $_idPlanoCli;
+            $this->dataInicio = $_DataIni;
+            $this->dataTermino = $_DataTerm;
+            $this->desconto = $_Desconto;
+            $this->idCliente = $_idCli;
+            $this->idPlano = $_idPlano;
+        }
+
+        //* Set Data
+        public function SetData($data)
+        {
+            $this->SetId($data['idPlanoCliente']);
+            $this->SetDataIni($data['DataInicio']);
+            $this->SetDataTermino($data['DataTermino']);
+            $this->SetDesconto($data['Desconto']);
+            $this->
+        }
 
     }
 

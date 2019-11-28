@@ -85,7 +85,11 @@
         public  static function ListaPlanos($_id)
         {
             $sql = new Sql();
-            return $sql->select("SELECT * FROM plano order by idPlanos");
+            return $sql->select("SELECT * FROM plano WHERE idPlanos = :id",
+            array
+            (
+                ':id' = $_id
+            ));
         }
 
         //* -------------------------------------------Métodos Construtores-------------------------------------
