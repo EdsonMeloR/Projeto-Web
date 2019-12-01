@@ -191,7 +191,38 @@
             (
                 ':id'= $_id
             ));
-        }     
+        }
+        
+        //* Set data
+        public function setData($data)
+        {   
+            $this->SetIdCarga($data['IdCarga']);
+            $this->SetIdTipo($data['idTipo']);
+            $this->SetIdPedido($data['idPedido']);
+            $this->SetPeso($data['peso']);           
+            $this->SetLargura($data['largura']);
+            $this->SetAltura($data['altura']);
+            $this->SetComprimento($data['comprimento']);
+            $this->SetNomeProd($data['nomeProduto']);
+            $this->SetDetalhesProd($data['detalhesProduto']);
+            $this->SetValorProd($data['valorProduto']);
+            $this->SetQuantidade($data['quantidade']);
+        }
+        
+        //* Construtor 
+        public function __construct($_idtip="", $_idped="", $_peso="", $_largura="", $_altura="",$_comprimento="",$_nomeprod="",$_deta="", $_valor="",$_quant="")
+        {
+            $this->idTipo = $_idtip;
+            $this->idPedido = $_idped;
+            $this->peso = $_peso;
+            $this->largura = $_largura;
+            $this->altura = $_altura;
+            $this->comprimento = $_comprimento;
+            $this->nomeProduto = $_nomeprod;
+            $this->detalhesProduto = $_deta;
+            $this->valorProduto = $_valor;
+            $this->quantidade = $_quant;
+        }
 
 
     } 
