@@ -792,31 +792,19 @@ h1
     font-size: 1.5em;
 }
 
-.planos
+.not-user
 {
     text-align: left;
-
+    padding: 15px;    
 }
 
-.planos p
+.info-user
 {
-    font-size: 1.6em;
-    color: #fff;    
+    width: 450px;
 }
 
-.ultimo-plano
+.info-user p
 {
-    background-color: white;
-    width: 210px;
-    height: 350px;
-    margin-top: 15px;
-    border-radius: 4px;
-    text-align: center;   
-}
-
-.ultimo-plano p 
-{
-    color: black;
-    font-size: 1.3em;
-    padding-top: 6px;
+    border-bottom: 1px solid #fff;    
+    padding-top: 10px;
 }

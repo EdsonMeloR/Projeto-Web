@@ -4,17 +4,10 @@
 </div>
 
 <div class="not-user">
-    <div class="planos">
-        <p>SEUS PLANOS</p>
-
-        <div class="ultimo-plano">
-            <p>PLANO BASSICO</p>
-            <div class="preco">
-                <p>$100</p>
-            </div>
-            <div class="info">
-
-            </div>
-        </div>
+    <div class="info-user">
+        <p>Nome <span></span></p>
+        <p>Nome <span></span></p>
+        <p>Nome <span></span></p>
+        <p>Nome <span></span></p>
     </div>
 </div>
