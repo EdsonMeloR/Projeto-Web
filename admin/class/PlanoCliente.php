@@ -133,14 +133,14 @@
             $this->idPlano = $_idPlano;
         }
 
-        //* Set Data
+        //* Set Data - Passar dados ao atributo
         public function SetData($data)
         {
-            $this->SetId($data['idPlanoCliente']);
             $this->SetDataIni($data['DataInicio']);
             $this->SetDataTermino($data['DataTermino']);
             $this->SetDesconto($data['Desconto']);
-            $this->
+            $this->SetIdCliente($data['idCliente']);
+            $this->SetIdPlano($data['idPlano']);
         }
 
     }

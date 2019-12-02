@@ -100,7 +100,7 @@
                 ':cnpj'=>$this->GetCnpj(),
                 'email'=>$this->GetEmail(),
                 ':insc'=>$this->GetIncricaoEstadual(),
-                ':senha'=>$this->GetSenha(),
+                ':senha'=>md5($this->GetSenha()),
                 ':tel'=>$this->GetTelefone(),
                 ':nomec'=>$this->GetNomeContato()
             ));
@@ -111,16 +111,16 @@
         }
 
         //* Atualizar dados cliente
-        public function Alterar()
+        public function Alterar($_tel, $_nomec, $_email, $_razs)
         {
             $sql = new Sql();
             $sql->query('CALL update_cliente(:tel, :nomec, :email, :rzsoc)',
             array
             (
-                ':tel'=>$this->GetTelefone(),
-                ':nomec'=>$this->GetNomeContato(),
-                ':email'=>$this->GetEmail(),
-                ':rzsoc'=>$this->GetRazaoS()
+                ':tel'=>$this->$_tel,
+                ':nomec'=>$this->$_nomec,
+                ':email'=>$this->$_email,
+                ':rzsoc'=>$this->$_razs
             ));
         }
         //! REVISAR
@@ -167,8 +167,4 @@
             $this->nomeContato = $_nomec;
         }
     }
-
-
-
-
 ?>
