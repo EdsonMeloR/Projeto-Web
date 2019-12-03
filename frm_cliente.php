@@ -23,7 +23,7 @@
                     <i class="icon fa fa-user"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="text" name="frm_nome_cliente" placeholder="Nome Completo">
+                <input class="filed_form" type="text" name="txt_nome" placeholder="Nome Completo">
             </div>
 
             <!-- EMAIL -->
@@ -33,7 +33,7 @@
                     <i class="icon fa fa-envelope"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="text" name="frm_email_cliente" placeholder="Email">
+                <input class="filed_form" type="text" name="txt_email" placeholder="Email">
             </div>
 
             <!-- CPF -->
@@ -43,8 +43,7 @@
                     <i class="icon fa fa-lock"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="text" name="frm_cnpj_cliente" placeholder="CNPJ">
-            </div>
+                <input class="filed_form" type="text" name="txt_cnpj" placeholder="CNPJ">           </div>
 
             <!-- TELEFONE -->
 
@@ -53,7 +52,7 @@
                     <i class="icon fa fa-phone"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="text" name="frm_telefone_cliente" placeholder="Telefone">
+                <input class="filed_form" type="text" name="txt_telefone" placeholder="Telefone">
             </div>
 
             <!-- SENHA -->
@@ -63,7 +62,7 @@
                     <i class="icon fa fa-lock"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="password" name="frm_senha_cliente" placeholder="Senha">
+                <input class="filed_form" type="password" name="txt_senha" placeholder="Senha">
             </div>
 
             <!-- CONFIRMAR SENHA -->
@@ -73,13 +72,13 @@
                     <i class="icon fa fa-check"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="password" name="frm_confir_senha_cliente" placeholder="Confirmar Senha">
+                <input class="filed_form" type="password" name="txt_confirmarsenha" placeholder="Confirmar Senha">
             </div>
 
             <!-- BOTÃO -->
 
             <div class="field_forms">
-                <input type="submit" value="Cadastrar-se" name="frm_btn_cadastrar_cliente">                
+                <input type="submit" value="Cadastrar-se" name="btn_cadastrar">                
             </div>
         </form>    
     </div>  

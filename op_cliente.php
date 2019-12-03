@@ -1,5 +1,5 @@
 <?php
-    require_once('../config.php');    
+    require_once('config.php');    
 
     // ? FAZER LOGIN PARA ÁREA DO CLIENTE
 
@@ -11,9 +11,7 @@
             $_POST['login_cliente'],
             $_POST['senha_cliente']
         );
-
         var_dump($cliente);
-
         if($cliente->getId() > 0)
         {
             // header('location:admin/principal.php');
@@ -25,21 +23,20 @@
 
     // ? ADICIONAR NOVO CLIENTE NO BANCO DE DADOS
     
-    if(isset($_POST['frm_btn_cadastrar_cliente']))
+    if(isset($_POST['btn_cadastrar']))
     {
-        $new_cliente = new Cliente
+        $cliente = new Cliente
         (
-            $_POST['frm_nome_cliente'],
-            $_POST['frm_email_cliente'],
-            $_POST['frm_cnpj_cliente'],
-            $_POST['frm_telefone_cliente'],
-            $_POST['frm_senha_cliente'],
+            $_POST['txt_nome'],
+            $_POST['txt_email'],
+            $_POST['txt_cnpj'],
+            $_POST['txt_telefone'],
+            $_POST['txt_senha']
         );
-
-        $new_cliente->Insert();
-        if($new_cliente->getId()!=null)
+        $cliente->Insert();
+        if($cliente->getId()!=null)
         {
-            header('location:login_user.php');            
+            header('location:login_cliente.php');            
         }
     }
 
