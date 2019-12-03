@@ -7,9 +7,13 @@
 
         private $cn;
 
+        // public function __construct()
+        // {
+        //     $this->cn = new PDO("mysql:host=softkleen.com.br;dbname=softklee_prosperity",'softklee_prosperity','senac@prosp');   
+        // }
         public function __construct()
         {
-            $this->cn = new PDO("mysql:host=softkleen.com.br;dbname=softklee_prosperity",'softklee_prosperity','senac@prosp');   
+            $this->cn = new PDO("mysql:host=127.0.0.1;dbname=prosperitydb",'root','');   
         }
 
         public function setParams($comando, $parametros = array())

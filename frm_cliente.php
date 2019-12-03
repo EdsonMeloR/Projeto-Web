@@ -16,67 +16,65 @@
     <div class="box">
 
         <form action="op_cliente.php" class="frm login" method="POST">
-            <!-- USUÁRIO -->
-
-            <div class="field_forms">
-                <label for="user_name">
-                    <i class="icon fa fa-user"></i>
-                    <span class="hidden">Usuário</span>
-                </label>
-                <input class="filed_form" type="text" name="txt_nome" placeholder="Nome Completo">
-            </div>
-
-            <!-- EMAIL -->
-
-            <div class="field_forms">
-                <label for="user_name">
-                    <i class="icon fa fa-envelope"></i>
-                    <span class="hidden">Usuário</span>
-                </label>
-                <input class="filed_form" type="text" name="txt_email" placeholder="Email">
-            </div>
-
-            <!-- CPF -->
-
-            <div class="field_forms">
+         <!-- CPF -->
+         <div class="field_forms">
                 <label for="user_name">
                     <i class="icon fa fa-lock"></i>
                     <span class="hidden">Usuário</span>
                 </label>
                 <input class="filed_form" type="text" name="txt_cnpj" placeholder="CNPJ">           </div>
+        <!-- USUÁRIO -->
+        <div class="field_forms">
+            <label for="user_name">
+                <i class="icon fa fa-user"></i>
+                <span class="hidden">Usuário</span>
+            </label>
+            <input class="filed_form" type="text" name="txt_razao" placeholder="Razao Social">
+        </div>
 
-            <!-- TELEFONE -->
+        <!-- EMAIL -->
+        <div class="field_forms">
+            <label for="user_name">
+                <i class="icon fa fa-envelope"></i>
+                <span class="hidden">Usuário</span>
+            </label>
+            <input class="filed_form" type="text" name="txt_email" placeholder="Email">
+        </div>
 
-            <div class="field_forms">
-                <label for="user_name">
-                    <i class="icon fa fa-phone"></i>
-                    <span class="hidden">Usuário</span>
-                </label>
-                <input class="filed_form" type="text" name="txt_telefone" placeholder="Telefone">
-            </div>
-
-            <!-- SENHA -->
-
-            <div class="field_forms">
-                <label for="user_name">
-                    <i class="icon fa fa-lock"></i>
-                    <span class="hidden">Usuário</span>
-                </label>
-                <input class="filed_form" type="password" name="txt_senha" placeholder="Senha">
-            </div>
-
-            <!-- CONFIRMAR SENHA -->
-
-            <div class="field_forms">
-                <label for="user_name">
-                    <i class="icon fa fa-check"></i>
-                    <span class="hidden">Usuário</span>
-                </label>
-                <input class="filed_form" type="password" name="txt_confirmarsenha" placeholder="Confirmar Senha">
-            </div>
-
+        <!-- Inscrição Estadual -->
+        <div class="field_forms">
+            <label for="user_name">
+                <i class="icon fa fa-envelope"></i>
+                <span class="hidden">Usuário</span>
+            </label>
+            <input class="filed_form" type="text" name="txt_inscr" placeholder="Incricao Estadual">
+        </div>
+        <!-- SENHA -->
+        <div class="field_forms">
+            <label for="user_name">
+                <i class="icon fa fa-lock"></i>
+                <span class="hidden">Usuário</span>
+            </label>
+            <input class="filed_form" type="password" name="txt_senha" placeholder="Senha">
+        </div>
+        <!-- TELEFONE -->
+        <div class="field_forms">
+            <label for="user_name">
+                <i class="icon fa fa-phone"></i>
+                <span class="hidden">Usuário</span>
+            </label>
+            <input class="filed_form" type="text" name="txt_telefone" placeholder="Telefone">
+        </div>
+           
+        <!-- Nome Contato -->
+        <div class="field_forms">
+            <label for="user_name">
+                <i class="icon fa fa-phone"></i>
+                <span class="hidden">Usuário</span>
+            </label>
+            <input class="filed_form" type="text" name="txt_nomec" placeholder="Nome de Contato">
+        </div>
             <!-- BOTÃO -->
-
             <div class="field_forms">
                 <input type="submit" value="Cadastrar-se" name="btn_cadastrar">                
             </div>

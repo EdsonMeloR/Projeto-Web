@@ -98,7 +98,7 @@
             (
                 ':rzs'=>$this->GetRazaoS(),
                 ':cnpj'=>$this->GetCnpj(),
-                'email'=>$this->GetEmail(),
+                ':email'=>$this->GetEmail(),
                 ':insc'=>$this->GetIncricaoEstadual(),
                 ':senha'=>md5($this->GetSenha()),
                 ':tel'=>$this->GetTelefone(),
@@ -142,7 +142,6 @@
             }
         }
 
-
         //* --------------------------------------Métodos de acesso-------------------------------
         
         //* Passa dados aos Atributos
@@ -159,8 +158,9 @@
         }
 
         //* Construtor 
-        public function __construct($_rz="", $_email="", $_incr="", $_senha="", $_telefone="",$_nomec="", $_cnpjc="")
+        public function __construct($_idcli="",$_rz="", $_email="", $_incr="", $_senha="", $_telefone="",$_nomec="", $_cnpjc="")
         {
+            $this->id = $_idcli;
             $this->razaosocial = $_rz;
             $this->email = $_email;
             $this->inscricaoestadual = $_incr;
