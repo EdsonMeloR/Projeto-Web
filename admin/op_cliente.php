@@ -3,18 +3,20 @@
 
     // ? FAZER LOGIN PARA ÁREA DO CLIENTE
 
-    if(isset($_POST['btn_login_cliente']) && isset($_POST['login_cliente']))
+    if(isset($_POST['btn_login_cliente']))
     {
         $cliente = new Cliente();            
-        $cliente->FazerLogin
+        $cliente->EfetuarLogin
         (
             $_POST['login_cliente'],
             $_POST['senha_cliente']
         );
 
+        var_dump($cliente);
+
         if($cliente->getId() > 0)
         {
-            header('location:principal.php');
+            // header('location:admin/principal.php');
         }
     }  
 

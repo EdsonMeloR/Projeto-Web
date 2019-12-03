@@ -123,6 +123,7 @@
                 ':rzsoc'=>$this->$_razs
             ));
         }
+
         //! REVISAR
         //* Efetuar Login
         public function EfetuarLogin($_cnpj, $_senha)
@@ -149,6 +150,7 @@
         {   
             $this->SetId($data['IdCliente']);
             $this->SetRazaoS($data['RazaoSocial']);
+            $this->SetCnpj($data['Cnpj']);
             $this->setEmail($data['Email']);
             $this->SetInscricaoEstadual($data['Inscricao_estadual']);           
             $this->setSenha($data['Senha']);
@@ -157,7 +159,7 @@
         }
 
         //* Construtor 
-        public function __construct($_rz="", $_email="", $_incr="", $_senha="", $_telefone="",$_nomec="")
+        public function __construct($_rz="", $_email="", $_incr="", $_senha="", $_telefone="",$_nomec="", $_cnpjc="")
         {
             $this->razaosocial = $_rz;
             $this->email = $_email;
@@ -165,6 +167,7 @@
             $this->senha = $_senha;
             $this->telefone = $_telefone;
             $this->nomeContato = $_nomec;
+            $this->cnpj = $_cnpjc;
         }
     }
 ?>
