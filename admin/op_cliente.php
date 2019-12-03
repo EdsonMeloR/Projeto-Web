@@ -3,13 +3,13 @@
 
     // ? FAZER LOGIN PARA ÁREA DO CLIENTE
 
-    if(isset($_POST['btn_login_adm']) && isset($_POST['txt_adm']))
+    if(isset($_POST['btn_login_cliente']) && isset($_POST['login_cliente']))
     {
         $cliente = new Cliente();            
         $cliente->FazerLogin
         (
-            $_POST['txt_adm'],
-            $_POST['senha_adm']
+            $_POST['login_cliente'],
+            $_POST['senha_cliente']
         );
 
         if($cliente->getId() > 0)

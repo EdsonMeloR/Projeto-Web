@@ -82,14 +82,10 @@
         //* --------------------------------------Métodos da classe----------------------------------------
 
         //* Gerar Listar De planos
-        public  static function ListaPlanos($_id)
+        public  static function ListaPlanos()
         {
             $sql = new Sql();
-            return $sql->select("SELECT * FROM plano WHERE idPlanos = :id",
-            array
-            (
-                ':id' = $_id
-            ));
+            return $sql->select('SELECT * FROM planos order by id');
         }
 
         //* -------------------------------------------Métodos Construtores-------------------------------------

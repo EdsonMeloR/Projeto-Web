@@ -33,7 +33,7 @@
         </nav>
 
         <div class="btn-login">
-            <a href="area_cliente.php" class="fa fa-user"></a>
+            <a href="login_cliente.php" class="fa fa-user"></a>
         </div>
     </header>  
     
@@ -48,17 +48,24 @@
            suas mercadorias 
         </p>
 
-        <div class="planos" id="tabela_planos"> 
-            <div class="plano">
-                <h3>Basico <span>$150</span> </h3>
-                <a class="login_user" href="login_cliente.php">Fazer Login</a>
-                <ul>
-                    <li> <b></b> Descrição </li>
-                    <li> <b></b> Descrição </li>
-                    <li> <b></b> Descrição </li>
-                    <li> <b></b> Descrição </li>
-                </ul>
-            </div> 
+        <?php
+            require_once('config.php');
+            $planos = Plano::ListaPlanos();            
+        ?>
+
+        <?php
+            foreach($planos as $plano)
+            {
+        ?> 
+        <a> <?php echo $plano['NomePlano']; ?> </a>
+
+        <!-- <table class="planos" id="tabela_planos">
+            
+            <tr class="plano">             
+                <td style="color: #eeee;">
+                    <?php echo $plano['NomePlano']; ?> 
+                </td>
+            </tr> 
             
             <div class="plano">
                 <h3>Medio <span>$230</span> </h3>
@@ -80,23 +87,19 @@
                     <li> <b></b> Descrição </li>
                     <li> <b></b> Descrição </li>
                 </ul>
-            </div>
+            </div> -->
+
+            <?php
+                }
+            ?>
  
-        </div>
+        </table>
 
     </section>
     </main>
 
     <!-- Footer - Rodapé -->
     <footer class="rodape">
-        <br>
-        <div class="area_adm">
-            <a href="admin/login.php" class="adm">
-                <span>
-                    Área Administrativa
-                </span>
-            </a>
-        </div>    
         <br>                       
         <span class="cop">
             Copyright © ShellCode 2019. Todos os direitos reservados.

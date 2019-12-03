@@ -15,7 +15,7 @@
 
     <div class="box">
 
-        <form action="admin/principal.php?" class="frm login">
+        <form action="admin/op_cliente.php" class="frm login">
             <!-- USUÁRIO -->
 
             <h1 style="font-family:Arial; 
@@ -29,7 +29,7 @@
                     <i class="icon fa fa-user"></i>
                     <span class="hidden">Usuário</span>
                 </label>
-                <input class="filed_form" type="text" name="txt_user" placeholder="CNPJ/CPF/Email">
+                <input class="filed_form" type="text" name="login_cliente" placeholder="CNPJ/CPF/Email">
             </div>
 
             <!-- SENHA -->
@@ -39,13 +39,13 @@
                     <i class="icon fa fa-lock"></i>
                     <span class="hidden">Senha</span>
                 </label>
-                <input class="filed_form" type="password" name="senha_user" placeholder="Senha">
+                <input class="filed_form" type="password" name="senha_cliente" placeholder="Senha">
             </div>
 
             <!-- BOTÃO LOGIN -->
 
             <div class="field_forms">
-                <input type="submit" value="Fazer Login" href="admin/principal.php">
+                <input type="submit" value="Fazer Login" name="btn_login_cliente">
             </div>
 
             <!-- BOTÃO CADASTRAR -->
