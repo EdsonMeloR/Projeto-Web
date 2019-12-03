@@ -50,7 +50,7 @@
             return $this->idTipoFrete;
         } 
 
-        public function SetIdTipoTransporte($value)
+        public function SetIdTipoFrete($value)
         {
             $this->idTipoFrete = $value;
         }
@@ -101,7 +101,7 @@
         }
 
         //* Detalhar Nota Transporte
-
+        //! Revisar----------------------------------------
         public function DetalharNotaTranporte($_id)
         {
             $sql = new Sql();
@@ -110,6 +110,36 @@
             (
                 ':id' = $_id
             ));
+        }
+        public function setData($data)
+        {   
+//             `idNotaTransporte` INT(11) NOT NULL AUTO_INCREMENT,
+// --   `idVeiculo` INT(11) NOT NULL,
+// --   `idMotorista` INT(11) NOT NULL,
+// --   `idTiposFretes` INT(11) NOT NULL,
+// --   `Observacoes` VARCHAR(255) NULL DEFAULT NULL,
+// --   `ValorPedagios` DECIMAL(10,2) NOT NULL,
+// --   `Distancia` DECIMAL(10,3) NOT NULL,
+// --   `DataEntrega` DATE NULL DEFAULT NULL,
+// --   `ValorFrete` DECIMAL(10,2) NOT NULL,
+            $this->SetIdNotaTransporte($data['IdNotaTransporte']);
+            $this->SetIdVeiculo($data['idVeiculo']);
+            $this->SetIdMotoriste($data['idMotorista']);
+            $this->SetIdTipoFrete($data['idTipoFretes']);
+            $this->SetDistancia($data['Distancia']);           
+            $this->SetValorFrete($data['ValorFrete']);
+            $this->SetDataEmissao($data['DataEntrega']);
+        }
+
+        //* Construtor 
+        public function __construct($_idvei="", $_idmot="", $_idtipofrete="", $_distancia="", $_valor="",$_dataemis="")
+        {
+            $this->idVeiculo = $_idvei;
+            $this->idMotorista = $_idmot;
+            $this->idTipoFrete = $_idtipofrete;
+            $this->distancia = $_distancia;
+            $this->valorFrete = $_valor;
+            $this->dataEmissao = $_dataemis;
         }
     }
 

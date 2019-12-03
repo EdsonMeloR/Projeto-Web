@@ -12,7 +12,7 @@
         {
             return $this->idEndereco;
         }
-        public function SetEndereco($value)
+        public function SetIdEndereco($value)
         {
             $this->idEndereco = $value;
         }
@@ -30,7 +30,7 @@
         {
             return $this->idTipoEndereco;
         }
-        public function Set($value)
+        public function SetIdTipoEndereco($value)
         {
             $this->idTipoEndereco = $value;
         }
@@ -39,10 +39,29 @@
         public function Insert()
         {
             $sql = new Sql();
-            $sql->select('CALL ')
+            $resultado = $sql->select('CALL insert_pedidosenderecos(:idend ,:idped ,:idtipoend)',
+            array
+            (
+                ':idend' = GetIdEndereco(),
+                ':idped' = GetIdPedido(),
+                ':idtipoend' = GetIdTipoEndereco()
+            ));
+            if(count($resultado)>0)
+            {
+                $this->setData($resultado[0]);
+            }
         }
-
-
+        public function SetData($data)
+        {
+            $this->SetIdEndereco($data['IdEndereco']);
+            $this->SetIdPedido($data['idPedido']);
+            $this->SetIdTipoEndereco($data['idTiposEnderecos']);
+        }
+        public function __construct($_idend,$_idPed="", $_idTipoEnd="")
+        {
+            $this->idEndereco = $_idend;
+            $this->idPedido = $_idPed;
+            $this->idTipoEndereco = $_idTipoEnd;
     }
 
 
