@@ -42,33 +42,27 @@
             $resultado = $sql->select('CALL insert_pedidosenderecos(:idend ,:idped ,:idtipoend)',
             array
             (
-                ':idend' = GetIdEndereco(),
-                ':idped' = GetIdPedido(),
-                ':idtipoend' = GetIdTipoEndereco()
+                ':idend' = $this->GetIdEndereco(),
+                ':idped' = $this->GetIdPedido(),
+                ':idtipoend' = $this->GetIdTipoEndereco()
             ));
             if(count($resultado)>0)
             {
                 $this->setData($resultado[0]);
             }
         }
+        //*-----------------------------------Construtores-----------------------------------
         public function SetData($data)
         {
             $this->SetIdEndereco($data['IdEndereco']);
             $this->SetIdPedido($data['idPedido']);
             $this->SetIdTipoEndereco($data['idTiposEnderecos']);
         }
-        public function __construct($_idend,$_idPed="", $_idTipoEnd="")
+        public function __construct($_idend="",$_idPed="", $_idTipoEnd="")
         {
             $this->idEndereco = $_idend;
             $this->idPedido = $_idPed;
             $this->idTipoEndereco = $_idTipoEnd;
+        }
     }
-
-
-
-
-
-
-
-
 ?>
